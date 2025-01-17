@@ -11,14 +11,12 @@ import Testimonal from "./_components/testimonal";
 export default function Home() {
   return (
     <>
-  <Navbar />
   <HeroSection />
   <Service />
   <ContactUs />
   <Blog />
   <Statics />
   <Testimonal />
-  <Footer />
 </>
 
   );

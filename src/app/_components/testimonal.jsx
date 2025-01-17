@@ -18,42 +18,42 @@ import Image from "next/image";
 export default function Testimonal() {
   const testimonials = [
     {
-      name: "Liam O'Connor",
-      location: "Ireland",
-      data: "Outstanding quality and service. Khoshnaw Vegetables & Fruits Trading Company ensures every product is fresh and delivered on time. Truly impressed by their professionalism! Highly recommend!",
+      name: "Jonathan Edwards",
+      location: "United Kingdom",
+      data: "Trading has redefined the standards for global fresh produce exports. Their seamless logistics and consistent quality make them a preferred partner in the competitive international market.",
     },
     {
-      name: "Amara Patel",
-      location: "India",
-      data: "Exceptional produce and reliable delivery. Their attention to detail and commitment to freshness make them stand out. A top-notch company!",
-    },
-    {
-      name: "Carlos Hernández",
+      name: "Sofia Martinez",
       location: "Spain",
-      data: "Impeccable service and superior quality. Fresh fruits and vegetables every time, delivered with a smile. Khoshnaw Trading never disappoints!",
+      data: "The professionalism and reliability of Trading are unmatched. Their commitment to timely deliveries and premium produce ensures our import operations run smoothly every time.",
     },
     {
-      name: "Hassan Ali",
+      name: "Arjun Mehta",
+      location: "India",
+      data: "Their expertise in export-import trade is evident in every transaction. From documentation to delivery, Trading ensures a hassle-free experience, allowing us to focus on our business growth.",
+    },
+    {
+      name: "Fatima Hassan",
       location: "UAE",
-      data: "Fresh produce and outstanding customer service. Khoshnaw Trading makes it easy to get the best quality fruits and vegetables every time. Highly recommended!",
+      data: "Trading is a trusted name in global trade. Their ability to navigate international regulations and deliver on promises sets them apart in the fresh produce export industry.",
     },
     {
-      name: "Luca Rossi",
+      name: "Luigi Ricci",
       location: "Italy",
-      data: "Incredible quality and seamless service. Every order has been fresh, perfectly packed, and delivered promptly. Highly impressed!",
+      data: "As an importer, we value consistency and quality. Trading delivers both, making them an integral part of our supply chain. Their attention to global standards is commendable.",
     },
     {
-      name: "Fatima Al Zarooni",
-      location: "Dubai",
-      data: "Unparalleled service and quality produce. Khoshnaw Trading has become our trusted supplier for fresh fruits and vegetables. Their professionalism and timely delivery are remarkable. Highly recommended!",
+      name: "Chen Wei",
+      location: "China",
+      data: "From sourcing to shipping, Trading showcases exceptional expertise in global trade. Their produce meets international standards, and their logistics are always reliable.",
     },
     {
-      name: "Mohammed Bin Saleh",
+      name: "Ahmed Al Maktoum",
       location: "Dubai",
-      data: "Excellent quality and exceptional service. Khoshnaw Trading ensures fresh and top-tier produce every time. Their attention to detail is commendable. A reliable choice!",
+      data: "Trading bridges the gap between farmers and international markets effortlessly. Their dedication to sustainable trade practices and customer satisfaction is truly inspiring.",
     },
   ];
-
+  
   return (
     <div
       id="review"
@@ -70,12 +70,12 @@ export default function Testimonal() {
           <p className="text-secondary-main font-medium md:mt-4 mt-2  max-md:text-xl text-2xl max-md:text-center max-md:leading-snug">
           Hear from our satisfied partners about the quality, reliability and service that set us apart.
           </p>
-          <p className="md:text-lg text-sm  text-secondary-main md:mt-4 mt-2">Khoshnaw Vegetables & Fruits Trading Company is highly regarded by our clients for delivering the freshest fruits and vegetables, paired with exceptional quality and reliable service. Our steadfast commitment to customer satisfaction has fostered lasting relationships and earned us trust worldwide.      </p>
+          <p className="md:text-lg text-sm  text-secondary-main md:mt-4 mt-2">Vegetables & Fruits Trading Company is highly regarded by our clients for delivering the freshest fruits and vegetables, paired with exceptional quality and reliable service. Our steadfast commitment to customer satisfaction has fostered lasting relationships and earned us trust worldwide.      </p>
 
           
         </div>
         <Swiper
-          AutoPlay={true}
+          autoPlay={true}
           loop={true}
           spaceBetween={40}
           navigation={{
@@ -101,7 +101,7 @@ export default function Testimonal() {
               <p className="text-[#666] md:text-xl text-sm mt-4">
                 {ele.data}
               </p>
-              <p className="md:text-2xl text-base text-secondary-main font-bold md:mt-4 mt-2">
+              <p className="md:text-2xl text-base text-secondary-main font-bold  mt-2">
                 {ele.name}
               </p>
               <p className="text-lg font-medium text-[#666666]">

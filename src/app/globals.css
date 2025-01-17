@@ -9,3 +9,11 @@
   height: 40vw; /* Set your desired height */
   object-fit: cover; /* This will help maintain the aspect ratio and fill the container */
 }
+
+/* 
+.hover:scale-105 {
+  transform: scale(1.05);
+} */
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
