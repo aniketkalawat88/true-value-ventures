@@ -57,7 +57,7 @@ export default function Testimonal() {
   return (
     <div
       id="review"
-      className="relative w-full h-full max-w-7xl mx-auto md:py-10 rounded-md max-md:mb-6  md:px-0 px-4"
+      className="relative w-full h-full max-w-7xl mx-auto md:py-10 rounded-md max-md:my-6  md:px-0 px-4"
     >
       <div className="grid md:grid-cols-7 grid-cols-1 w-full h-full ">
         <div className=" max-w-xl md:col-span-3 md:pr-2">
