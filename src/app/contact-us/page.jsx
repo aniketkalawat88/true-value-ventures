@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection2 from "../_components/hero-section2";
 import HappyClient from "../_components/happy-client";
 import Testimonal from "../_components/testimonal";
+import ContactUS from "../_components/contact-us";
 
 export default function ContactUs() {
   return (
@@ -66,6 +67,8 @@ export default function ContactUs() {
       </section>
 
       <Testimonal />
+      
+        <ContactUS />
     </>
   );
 }
