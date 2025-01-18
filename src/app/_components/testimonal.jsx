@@ -70,7 +70,7 @@ export default function Testimonal() {
           <p className="text-secondary-main font-medium md:mt-4 mt-2  max-md:text-xl text-2xl max-md:text-center max-md:leading-snug">
           Hear from our satisfied partners about the quality, reliability and service that set us apart.
           </p>
-          <p className="md:text-lg text-base text-[#666666] md:mt-4 mt-2">Exports and import are highly regarded by our clients for delivering the freshest fruits and vegetables, paired with exceptional quality and reliable service. Our steadfast commitment to customer satisfaction has fostered lasting relationships and earned us trust worldwide.      </p>
+          <p className="md:text-lg text-base text-[#666666] md:mt-4 mt-2">Exports and import are highly regarded by our clients for delivering the all type of export and import paired with exceptional quality and reliable service. Our steadfast commitment to customer satisfaction has fostered lasting relationships and earned us trust worldwide.      </p>
 
           
         </div>

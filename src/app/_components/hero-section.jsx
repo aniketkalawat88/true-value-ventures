@@ -60,7 +60,7 @@ const HeroSection = () => {
 
       <div className="h-full w-full bg-primary-main/30 absolute top-0" />
       <div className="flex items-center justify-center h-full absolute w-full top-0 px-4">
-        <div className="max-md: text-white max-w-7xl mx-auto ">
+        <div className="max-md:text-center text-white max-w-7xl mx-auto ">
           {/* <p
             className={`text-xs sm:text-base tracking-widest max-md:mt-10 md:mb-4 max-md:mb-2`}
           >
