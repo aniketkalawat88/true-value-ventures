@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroSection2 from '../_components/hero-section2';
+import Service from '../_components/service';
 
 export default function Services() {
   const logo = [
@@ -12,14 +13,14 @@ export default function Services() {
   return (
     <div>
           <HeroSection2 name={'Global Export & Import Solutions'} img={'https://media.licdn.com/dms/image/v2/D4E12AQEciG6Nxvmvhg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1702509848175?e=2147483647&v=beta&t=hkPjxyM_x6vVQxwVDTmWBfwgWg4G8zvIG3GvChb4yZk'} />
-
+<Service />
       <div className="services-page bg-gray-100">
-        {/* <div className="hero-section bg-primary-main text-white py-20 text-center">
-          <h1 className="text-4xl font-bold mb-4">Global Export & Import Solutions</h1>
-          <p className="text-lg max-w-3xl mx-auto">
+        <div className="hero-section bg-primary-main text-white py-20 text-center">
+          <h1 className="md:text-4xl text-2xl font-bold mb-4">Global Export & Import Solutions</h1>
+          <p className="md:text-lg text-sm max-w-4xl mx-auto">
             Unlock opportunities in global trade with our end-to-end services for export, import, logistics, and consulting.
           </p>
-        </div> */}
+        </div>
 
         {/* Services Section */}
         <div className="container max-w-7xl mx-auto px-6 py-10">

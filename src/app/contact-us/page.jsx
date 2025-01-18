@@ -66,9 +66,9 @@ export default function ContactUs() {
         </div>
       </section>
 
+      <ContactUS />
       <Testimonal />
       
-        <ContactUS />
     </>
   );
 }

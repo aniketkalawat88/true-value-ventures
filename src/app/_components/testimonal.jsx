@@ -62,7 +62,7 @@ export default function Testimonal() {
       <div className="grid md:grid-cols-7 grid-cols-1 w-full h-full ">
         <div className=" max-w-xl md:col-span-3 md:pr-2">
           <h1
-            className={`md:text-5xl sm:text-2xl text-xl font-bold md:tracking-tight text-secondary-main  max-md:text-center`}
+            className={`md:text-4xl sm:text-2xl text-2xl font-bold md:tracking-tight text-primary-main  max-md:text-center`}
           >
             What Our Clients Are Saying
             
@@ -70,7 +70,7 @@ export default function Testimonal() {
           <p className="text-secondary-main font-medium md:mt-4 mt-2  max-md:text-xl text-2xl max-md:text-center max-md:leading-snug">
           Hear from our satisfied partners about the quality, reliability and service that set us apart.
           </p>
-          <p className="md:text-lg text-sm  text-secondary-main md:mt-4 mt-2">Vegetables & Fruits Trading Company is highly regarded by our clients for delivering the freshest fruits and vegetables, paired with exceptional quality and reliable service. Our steadfast commitment to customer satisfaction has fostered lasting relationships and earned us trust worldwide.      </p>
+          <p className="md:text-lg text-base text-[#666666] md:mt-4 mt-2">Exports and import are highly regarded by our clients for delivering the freshest fruits and vegetables, paired with exceptional quality and reliable service. Our steadfast commitment to customer satisfaction has fostered lasting relationships and earned us trust worldwide.      </p>
 
           
         </div>
@@ -90,7 +90,7 @@ export default function Testimonal() {
               key={i}
               className="md:px-6 grid items-center h-full w-full"
             >
-              <div className="md:h-24 md:w-24 h-12 w-12 relative">
+              <div className="md:h-16 md:w-16 h-12 w-12 relative">
                 <Image
                   src={`/01.png`}
                   alt="No Preview"
@@ -98,19 +98,19 @@ export default function Testimonal() {
                   className="object-cover rounded-full"
                 />
               </div>
-              <p className="text-[#666] md:text-xl text-sm mt-4">
+              <p className="text-[#666] md:text-lg text-base mt-4">
                 {ele.data}
               </p>
-              <p className="md:text-2xl text-base text-secondary-main font-bold  mt-2">
+              <p className="md:text-2xl text-base text-primary-main font-bold  mt-2">
                 {ele.name}
               </p>
-              <p className="text-lg font-medium text-[#666666]">
+              <p className="md:text-lg text-sm font-medium text-[#666666]">
                 {ele.location}
               </p>
             </SwiperSlide>
           ))}
           
-        <div className="relative mt-4 max-md:pb-4">
+        <div className="relative md:mt-6 mt-4 max-md:pb-4">
             <button className="HomeSlidePrev text-primaryMain absolute md:bottom-0 bottom-5 max-md:left-1/3 left-6 -translate-y-1/2 z-10 hover:bg-secondary-main hover:text-white md:text-2xl p-2 rounded border bg-secondary-main/10 text-secondary-main">
               <FaArrowLeft />
             </button>

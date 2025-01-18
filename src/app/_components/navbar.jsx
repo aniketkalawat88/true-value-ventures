@@ -66,7 +66,7 @@ export default function Navbar() {
             <img
               alt="Company Logo"
               className="md:h-16 h-12 object-contain"
-              src="https://i.pinimg.com/736x/6e/7a/d2/6e7ad228bb4ca7a98e7616362f2cf659.jpg"
+              src="/logo1.png"
             />
           </div>
           <ul className="flex md:space-x-6 space-x-3">

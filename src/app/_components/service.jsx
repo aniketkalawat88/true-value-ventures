@@ -24,23 +24,27 @@ export default function Service() {
   ];
 
   return (
-    <section className="my-10 bg-white">
+    <section className="md:my-10 my-6 bg-white">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold">OUR SERVICES</h2>
-        <div className="flex flex-wrap justify-center mt-8">
+        <h2 className="md:text-3xl text-2xl font-bold">OUR SERVICES</h2>
+        <div className="flex flex-wrap justify-center md:mt-8">
           {services.map((service, index) => (
             <div key={index} className="w-full md:w-1/3 p-4">
-              <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="bg-white rounded-lg overflow-hidden shadow-sm shadow-primary-main/50">
                 <img
                   alt={service.title}
                   className="w-full h-56 object-cover"
                   src={service.imgSrc}
                 />
-                <div className="p-6">
+                <div className="md:p-4 p-2">
                   <h3 className="text-xl font-bold">{service.title}</h3>
                   <p className="mt-2 text-gray-600">{service.description}</p>
                 
                 </div>
+              <div className='grid grid-cols-2 border border-primary-main rounded-b-lg mf:text-base text-sm'>
+                <button className='bg-primary-main text-white  p-2'>Call Now</button>
+                <button className='text-primary-main  p-2'>Enquiry Now</button>
+              </div>
               </div>
             </div>
           ))}

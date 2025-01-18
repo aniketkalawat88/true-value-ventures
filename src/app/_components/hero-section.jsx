@@ -42,7 +42,7 @@ const HeroSection = () => {
   return (
     <div className="relative">
       <video
-        className="custom-video max-md:h-[300px]"
+        className="custom-video max-md:h-[500px]"
         loop
         playsInline
         muted
@@ -60,7 +60,7 @@ const HeroSection = () => {
 
       <div className="h-full w-full bg-primary-main/30 absolute top-0" />
       <div className="flex items-center justify-center h-full absolute w-full top-0 px-4">
-        <div className="text-center text-white max-w-7xl mx-auto ">
+        <div className="max-md: text-white max-w-7xl mx-auto ">
           {/* <p
             className={`text-xs sm:text-base tracking-widest max-md:mt-10 md:mb-4 max-md:mb-2`}
           >
@@ -70,14 +70,14 @@ const HeroSection = () => {
             Discover the Magic of
           </h1> */}
           <div
-                className="lg:text-[3.41rem] md:text-4xl sm:text-3xl text-2xl font-bold xl:leading-tight md:mb-10 sm:mb-6 drop-shadow-[0px_4px_4px_#666666] max-md:w-full"
+                className="lg:text-[3.41rem] md:text-4xl sm:text-3xl text-3xl font-bold xl:leading-tight md:mb-10 sm:mb-6 drop-shadow-[0px_4px_4px_#666666] max-md:w-full"
               >
                 Seamless Global Trade
                 <span className="md:text-heading-main drop-shadow-[0px_4px_4px_#C6A669]"></span>
                 <span className="block">Your reliable export-import partner.</span>
               </div>
               <p
-                className="md:text-2xl sm:text-xl text-base font-medium md:mb-8 drop-shadow-[0px_4px_4px_#666666] max-md:mt-5"
+                className="md:text-2xl sm:text-xl text-xl font-medium md:mb-8 drop-shadow-[0px_4px_4px_#666666] max-md:mt-5"
               >
                {`Streamline your international trade operations with our expert export-import services. From cargo handling to customs clearance, we ensure seamless global logistics tailored to your business.`}
               </p>

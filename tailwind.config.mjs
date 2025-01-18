@@ -10,8 +10,8 @@ const config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        "primary-main":"#dc2626",
-        "secondary-main":"#ff5e62"
+        "primary-main":"#1A812C",
+        "secondary-main":"#FED00E"
       },
     },
   },

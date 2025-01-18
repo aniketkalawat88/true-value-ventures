@@ -14,7 +14,7 @@ export default function Home() {
   <HeroSection />
   <Service />
   <ContactUs />
-  <Blog />
+  {/* <Blog /> */}
   <Statics />
   <Testimonal />
 </>

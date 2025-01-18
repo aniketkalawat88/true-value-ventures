@@ -9,50 +9,50 @@ export default function ContactUs() {
     className="absolute inset-0 w-full h-full object-cover opacity-50"
     src="https://plus.unsplash.com/premium_photo-1661962773421-6b97ceec1f0e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1wb3J0JTIwZXhwb3J0fGVufDB8fDB8fHww"
   />
-  <div className="max-w-7xl mx-auto py-10 relative z-10">
+  <div className="max-w-7xl mx-auto md:py-10 py-6 relative z-10">
     <div className="text-center">
       <h2 className="text-3xl font-bold uppercase">Enquiry Now</h2>
-      <p className="mt-4">We always use best &amp; fastest fleets</p>
+      <p className="md:mt-4 mt-2">We always use best &amp; fastest fleets</p>
     </div>
-    <form className="mt-8 max-w-5xl mx-auto bg-white p-8 rounded-lg shadow-md text-black">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <form className="md:mt-8 mt-4 max-w-5xl mx-auto bg-white md:p-8 p-4 rounded-lg shadow-md text-black">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-3 md:text-base text-sm">
         <input
-          className="py-2 px-4 rounded-lg border border-gray-300"
+          className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
           placeholder="Full Name"
           type="text"
         />
         <input
-          className="py-2 px-4 rounded-lg border border-gray-300"
+          className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
           placeholder="Email"
           type="email"
         />
         <input
-          className="py-2 px-4 rounded-lg border border-gray-300"
+          className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
           placeholder="Mobile"
           type="text"
         />
         <input
-          className="py-2 px-4 rounded-lg border border-gray-300"
+          className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
           placeholder="Destination From"
           type="text"
         />
         <input
-          className="py-2 px-4 rounded-lg border border-gray-300"
+          className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
           placeholder="Destination To"
           type="text"
         />
-        <select className="py-2 px-4 rounded-lg border  border-gray-300 text-gray-400">
+        <select className="md:py-2 py-1 px-4 rounded-lg border border-gray-300 text-gray-400">
           <option className=''>Shipping Type</option>
           <option className='text-black'>Type 1</option>
           <option className='text-black'>Type 2</option>
         </select>
       </div>
       <textarea
-        className="mt-4 py-2 px-4 rounded-lg border border-gray-300 w-full resize-none h-44"
+        className="mt-4 md:py-2 py-1 px-4 rounded-lg border border-gray-300 w-full resize-none md:h-28 h-16"
         placeholder="Message"
         defaultValue={""}
       />
-      <button className="mt-4 py-2 px-6 bg-primary-main hover:bg-primary-main rounded-full text-white">
+      <button className="mt-4 py-2 px-6 bg-primary-main hover:bg-primary-main rounded-md text-white">
         Submit
       </button>
     </form>
