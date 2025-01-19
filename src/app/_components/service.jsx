@@ -1,4 +1,5 @@
 import React from 'react';
+import { aboutVariants, MotionDiv } from '../utils/motion-div';
 
 export default function Service() {
   // Array of services
@@ -25,11 +26,11 @@ export default function Service() {
 
   return (
     <section className="md:my-10 my-6 bg-white">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center overflow-hidden">
         <h2 className="md:text-3xl text-2xl font-bold text-primary-main">OUR SERVICES</h2>
         <div className="flex flex-wrap justify-center md:mt-8">
           {services.map((service, index) => (
-            <div key={index} className="w-full md:w-1/3 p-4">
+            <MotionDiv variants={aboutVariants} initial="hiddenRight" whileInView={"visibleRight"} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.4*index }} key={index} className="w-full md:w-1/3 p-4">
               <div className="bg-white rounded-lg overflow-hidden shadow-sm shadow-primary-main/50">
                 <img
                   alt={service.title}
@@ -46,7 +47,7 @@ export default function Service() {
                 <button className='text-primary-main  p-2'>Enquiry Now</button>
               </div>
               </div>
-            </div>
+            </MotionDiv>
           ))}
         </div>
       </div>
