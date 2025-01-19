@@ -26,7 +26,7 @@ export default function Service() {
   return (
     <section className="md:my-10 my-6 bg-white">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="md:text-3xl text-2xl font-bold">OUR SERVICES</h2>
+        <h2 className="md:text-3xl text-2xl font-bold text-primary-main">OUR SERVICES</h2>
         <div className="flex flex-wrap justify-center md:mt-8">
           {services.map((service, index) => (
             <div key={index} className="w-full md:w-1/3 p-4">
