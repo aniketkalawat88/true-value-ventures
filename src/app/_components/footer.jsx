@@ -1,10 +1,39 @@
 import Link from 'next/link';
 import React from 'react';
+import { MotionDiv } from '../utils/motion-div';
 
 export default function Footer() {
+   const aboutVariants = {
+    hiddenTop: {
+      y: -100,
+      opacity: 0,
+    },
+    visibleTop: {
+      y: 0,
+      opacity: 1,
+      staggerChildren: 0.3,
+      transition: {
+        delay: 0.3,
+        duration: 0.4,
+      },
+    },
+    hiddenBottom: {
+      y: 200,
+      opacity: 0,
+    },
+    visibleBottom: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
     <footer className="bg-primary-main text-white py-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 md:gap-14 sm:gap-8 gap-4 px-6">
+      <MotionDiv 
+          variants={aboutVariants}
+          initial={aboutVariants.hiddenBottom}
+          whileInView={aboutVariants.visibleBottom}
+          viewport={{once: true}}
+          className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 md:gap-14 sm:gap-8 gap-4 px-6">
         <div className="col-span-2">
           <h4 className="font-bold mb-4">About Us</h4>
           <p>
@@ -77,7 +106,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      </div>
+      </MotionDiv>
       <div className="text-center mt-8">
         <p>&copy; {new Date().getFullYear()} Global Trade Solutions. All rights reserved.</p>
         <p>

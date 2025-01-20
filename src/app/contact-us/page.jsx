@@ -4,13 +4,25 @@ import HappyClient from "../_components/happy-client";
 import Testimonal from "../_components/testimonal";
 import ContactUS from "../_components/contact-us";
 import ContactMap from "./_components/contact-map";
+import { MotionDiv, MotionH2 } from "../utils/motion-div";
 
 export default function ContactUs() {
+  const variants = {
+    start:{ x: 100 , opacity:0},
+    end:{ x: 0 , opacity : 1},
+    startUp: {y: 100 , opacity:0 },
+    endUp : { y: 0 , opacity:1}
+  }
   return (
     <>
-    
-    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  rel="stylesheet"/>
-        <link  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"  rel="stylesheet"/>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
       <HeroSection2
         name={"Contact Us"}
         img={
@@ -18,32 +30,36 @@ export default function ContactUs() {
         }
       />
 
-<section className="my-10">
+      <section className="my-10">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-secondary-main mb-6 text-center">
+          <MotionH2 variants={variants} initial={variants.start} whileInView={variants.end} transition={{ duration:0.4 , delay:0.4}} viewport={{once:true}} className="text-3xl font-bold text-secondary-main mb-6 text-center">
             Why Our Customers Trust Us
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          </MotionH2>
+          <MotionDiv variants={variants} initial={variants.startUp} whileInView={variants.endUp} transition={{ duration:0.4 , delay:0.4}} viewport={{once:true}} className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 shadow-md text-center">
               <i className="fas fa-thumbs-up text-secondary-main text-4xl mb-4"></i>
               <h3 className="text-xl font-bold mb-2">Unmatched Quality</h3>
-              <p>We prioritize delivering the finest produce to every client.</p>
+              <p>
+                We prioritize delivering the finest produce to every client.
+              </p>
             </div>
             <div className="bg-white p-6 shadow-md text-center">
               <i className="fas fa-handshake text-secondary-main text-4xl mb-4"></i>
               <h3 className="text-xl font-bold mb-2">Reliable Partnerships</h3>
-              <p>Trusted by global clients for consistent and dependable service.</p>
+              <p>
+                Trusted by global clients for consistent and dependable service.
+              </p>
             </div>
             <div className="bg-white p-6 shadow-md text-center">
               <i className="fas fa-heart text-secondary-main text-4xl mb-4"></i>
               <h3 className="text-xl font-bold mb-2">Customer-Centric</h3>
               <p>Your satisfaction is at the heart of everything we do.</p>
             </div>
-          </div>
+          </MotionDiv>
         </div>
       </section>
       <section className="max-w-7xl mx-auto my-10 px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <MotionDiv variants={variants} initial={variants.startUp} whileInView={variants.endUp} transition={{ duration:0.4 , delay:0.4}}  viewport={{once:true}} className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white p-6 shadow-md text-center">
             <i className="fas fa-seedling text-secondary-main text-4xl mb-4"></i>
             <h3 className="text-xl font-bold mb-2">Freshness Guaranteed</h3>
@@ -53,7 +69,8 @@ export default function ContactUs() {
             <i className="fas fa-plane text-secondary-main text-4xl mb-4"></i>
             <h3 className="text-xl font-bold mb-2">Seamless Logistics</h3>
             <p>
-              Efficient global supply chain ensuring timely deliveries worldwide.
+              Efficient global supply chain ensuring timely deliveries
+              worldwide.
             </p>
           </div>
           <div className="bg-white p-6 shadow-md text-center">
@@ -61,12 +78,11 @@ export default function ContactUs() {
             <h3 className="text-xl font-bold mb-2">Sustainable Practices</h3>
             <p>Committed to eco-friendly and sustainable farming methods.</p>
           </div>
-        </div>
+        </MotionDiv>
       </section>
 
       <ContactUS />
       <ContactMap />
-      
     </>
   );
 }

@@ -18,9 +18,9 @@ export default function Whatsapp() {
         target="_blank"
         className="fixed text-4xl left-[3vw] bottom-[3.5vw] z-30 max-sm:p-4 md:scale-110"
       >
-        <div class="mypage-alo-phone">
-          <div class="animated infinite pulse mypage-alo-ph-circle-fill"></div>
-          <div class="animated infinite tada mypage-alo-ph-img-circle"></div>
+        <div className="mypage-alo-phone">
+          <div className="animated infinite pulse mypage-alo-ph-circle-fill"></div>
+          <div className="animated infinite tada mypage-alo-ph-img-circle"></div>
         </div>
       </Link>
     </div>

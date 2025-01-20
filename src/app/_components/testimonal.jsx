@@ -14,8 +14,32 @@ import "swiper/css/pagination";
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import Image from "next/image";
+import { MotionDiv } from "../utils/motion-div";
 
 export default function Testimonal() {
+  const aboutVariants = {
+    hiddenTop: {
+      y: -100,
+      opacity: 0,
+    },
+    visibleTop: {
+      y: 0,
+      opacity: 1,
+      staggerChildren: 0.3,
+      transition: {
+        delay: 0.3,
+        duration: 0.4,
+      },
+    },
+    hiddenBottom: {
+      y: 200,
+      opacity: 0,
+    },
+    visibleBottom: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   const testimonials = [
     {
       name: "Jonathan Edwards",
@@ -59,7 +83,11 @@ export default function Testimonal() {
       id="review"
       className="relative w-full h-full max-w-7xl mx-auto md:py-10 rounded-md max-md:my-6  md:px-0 px-4"
     >
-      <div className="grid md:grid-cols-7 grid-cols-1 w-full h-full ">
+      <MotionDiv 
+          variants={aboutVariants}
+          initial={aboutVariants.hiddenBottom}
+          whileInView={aboutVariants.visibleBottom}
+          viewport={{once: true}} className="grid md:grid-cols-7 grid-cols-1 w-full h-full ">
         <div className=" max-w-xl md:col-span-3 md:pr-2">
           <h1
             className={`md:text-4xl sm:text-2xl text-2xl font-bold md:tracking-tight text-primary-main  max-md:text-center`}
@@ -119,7 +147,7 @@ export default function Testimonal() {
             </button>
           </div>
         </Swiper>
-      </div>
+      </MotionDiv>
     </div>
   );
 }

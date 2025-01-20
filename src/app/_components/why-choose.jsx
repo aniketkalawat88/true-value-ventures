@@ -1,43 +1,57 @@
-import React from 'react'
+import React from "react";
+import { MotionDiv } from "../utils/motion-div";
 
 export default function WhyChoose() {
+  const variants = {
+    start: { y: 100, opacity: 0 },
+    end: { y: 0, opacity: 1 },
+  };
+  const arr = [
+    {
+      icon: "fas fa-star",
+      title: "Trusted Quality",
+      description:
+        "We deliver only the best, certified by global quality standards.",
+    },
+    {
+      icon: "fas fa-truck",
+      title: "On-Time Delivery",
+      description:
+        "Ensuring your shipments arrive on time, every time.",
+    },
+    {
+      icon: "fas fa-users",
+      title: "Dedicated Support",
+      description:
+        "Our team is available 24/7 to assist you with your trade needs.",
+    },
+  ]
   return (
-    <section className="py-16 bg-gray-100">
-    <div className="container mx-auto text-center">
-      <h2 className="text-3xl font-bold">WHY CHOOSE US?</h2>
-      <div className="flex flex-wrap justify-center mt-8">
-        <div className="w-full md:w-1/2 p-4">
-          <img
-            alt="Handshake"
-            className="w-full h-48 object-cover"
-            src="https://placehold.co/400x300"
-          />
-        </div>
-        <div className="w-full md:w-1/2 p-4">
-          <ul className="text-left space-y-4">
-            <li className="flex items-center">
-              <i className="fas fa-check-circle text-primary-main mr-2"></i>
-              <span>
-                We provide highly reliable and cost-effective transportation
-                services.
-              </span>
-            </li>
-            <li className="flex items-center">
-              <i className="fas fa-check-circle text-primary-main mr-2"></i>
-              <span>We have a team of experienced professionals.</span>
-            </li>
-            <li className="flex items-center">
-              <i className="fas fa-check-circle text-primary-main mr-2"></i>
-              <span>We ensure timely delivery of goods.</span>
-            </li>
-            <li className="flex items-center">
-              <i className="fas fa-check-circle text-primary-main mr-2"></i>
-              <span>We offer competitive pricing.</span>
-            </li>
-          </ul>
+    <div className="why-choose-us bg-white py-16">
+      <div className="container max-w-7xl mx-auto px-6 text-center overflow-hidden">
+        <h2 className="text-3xl font-bold text-primary-main mb-8">
+          Why Choose Us
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {arr.map((item, index) => (
+            <MotionDiv
+            variants={variants}
+            initial={variants.start}
+            whileInView={variants.end}
+            transition={{ duration: 0.4, delay: 0.4 * index }}
+            viewport={{ once : true}}
+              key={index}
+              className="bg-gray-100 p-6 shadow-sm rounded-md text-center hover:shadow-md"
+            >
+              <i
+                className={`${item.icon} text-secondary-main text-4xl mb-4`}
+              ></i>
+              <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+              <p className="text-gray-600">{item.description}</p>
+            </MotionDiv>
+          ))}
         </div>
       </div>
     </div>
-  </section>
-  )
+  );
 }

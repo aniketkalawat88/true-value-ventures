@@ -1,6 +1,15 @@
 import React from 'react'
+import { MotionDiv } from '../utils/motion-div'
 
 export default function ContactUs() {
+  const variants = {
+    start:{ x: 200 , opacity : 0},
+    end: {x : 0 , opacity : 1},
+    startUp: { y: 0 , scale : 0},
+    endUp: { y : 0 , scale: 1},
+  }
+
+
   return (
     
   <section className="relative my-10 bg-primary-main text-white md:px-0 px-6">
@@ -9,7 +18,7 @@ export default function ContactUs() {
     className="absolute inset-0 w-full h-full object-cover opacity-50"
     src="https://plus.unsplash.com/premium_photo-1661962773421-6b97ceec1f0e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1wb3J0JTIwZXhwb3J0fGVufDB8fDB8fHww"
   />
-  <div className="max-w-7xl mx-auto md:py-10 py-6 relative z-10">
+  <MotionDiv variants={variants} initial={variants.startUp} whileInView={variants.endUp} viewport={{ once: true }}  transition={{duration:0.7 , delay:0.3 , type:"spring"}} className="max-w-7xl mx-auto md:py-10 py-6 relative z-10">
     <div className="text-center">
       <h2 className="text-3xl font-bold uppercase">Enquiry Now</h2>
       <p className="md:mt-4 mt-2">We always use best &amp; fastest fleets</p>
@@ -56,7 +65,7 @@ export default function ContactUs() {
         Submit
       </button>
     </form>
-  </div>
+  </MotionDiv>
 </section>
 
 // {/* <div className="relative">

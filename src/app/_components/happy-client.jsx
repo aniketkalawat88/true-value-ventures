@@ -1,8 +1,19 @@
 import React from 'react'
+import { MotionSection } from '../utils/motion-div'
 
 export default function HappyClient() {
+  const variants = {
+    start:{ y:100 , opacity : 0},
+    end: { y :0 , opacity : 1},
+  }
   return (
-    <section className="bg-primary-main text-white py-12 mt-10">
+    <MotionSection 
+    variants={variants}
+    initial={variants.start}
+    whileInView={variants.end}
+    transition={{ duration: 0.5, delay: 0.3 }}
+    viewport={{once:true}}    
+    className="bg-primary-main text-white py-12 mt-10">
       <div className="container mx-auto grid md:grid-cols-4 grid-cols-2 gap-6">
         <div className="text-center mb-6 md:mb-0">
           <span className="text-4xl font-bold">10,000+</span>
@@ -21,6 +32,6 @@ export default function HappyClient() {
           <p>Customer Satisfaction</p>
         </div>
       </div>
-    </section>
+    </MotionSection>
   )
 }

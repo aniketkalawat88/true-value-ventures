@@ -1,12 +1,36 @@
-"use client"
+"use client";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation';
-import React from 'react'
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
 import { IoCall } from "react-icons/io5";
 import { MdMail } from "react-icons/md";
+import { MotionDiv, MotionNav } from "../utils/motion-div";
 
 export default function Navbar() {
+  const aboutVariants = {
+    hiddenTop: {
+      y: -100,
+      opacity: 0,
+    },
+    visibleTop: {
+      y: 0,
+      opacity: 1,
+      staggerChildren: 0.3,
+      transition: {
+        delay: 0.3,
+        duration: 0.4,
+      },
+    },
+    hiddenBottom: {
+      y: 200,
+      opacity: 0,
+    },
+    visibleBottom: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   const path = usePathname();
   const arr = [
     {
@@ -28,40 +52,49 @@ export default function Navbar() {
   ];
   return (
     <>
-   <header className="bg-primary-main/80 text-white">
-      <div className="max-w-7xl mx-auto flex justify-between items-center py-4 md:px-0 px-2">
-        <div className="flex items-center md:space-x-4 max-md:justify-between w-full max-md:text-sm px-2">
-          <div className="flex max-md:flex-col items-center md:space-x-4 space-x-1">
-            <div className="flex items-center space-x-2">
-              <IoCall />
-              <Link href={"tel:+98765432100"}>+98765432100</Link>
+      <header className="bg-primary-main/80 text-white">
+        <MotionDiv
+          variants={aboutVariants}
+          initial={aboutVariants.hiddenTop}
+          animate={aboutVariants.visibleTop}
+          className="max-w-7xl mx-auto flex justify-between items-center py-4 md:px-0 px-2"
+        >
+          <div className="flex items-center md:space-x-4 max-md:justify-between w-full max-md:text-sm px-2">
+            <div className="flex max-md:flex-col items-center md:space-x-4 space-x-1">
+              <div className="flex items-center space-x-2">
+                <IoCall />
+                <Link href={"tel:+98765432100"}>+98765432100</Link>
+              </div>
+              <div className="flex items-center space-x-2">
+                {/* <MdMail className=" md:hidden"></MdMail> {" "} */}
+                {/* <Link href={"tel:+9647509252524"} className="max-md:block w-full " >+9647509252524</Link> */}
+              </div>
             </div>
-            <div className="flex items-center space-x-2">
-              {/* <MdMail className=" md:hidden"></MdMail> {" "} */}
-              {/* <Link href={"tel:+9647509252524"} className="max-md:block w-full " >+9647509252524</Link> */}
+            <div className="space-x-2 flex items-center">
+              <MdMail className="" />
+              <Link href={"mailto:abc@gmail.com"}>abc@gmail.com</Link>
             </div>
-
           </div>
-          <div className="space-x-2 flex items-center">
-          <MdMail className="" />
-            <Link href={"mailto:abc@gmail.com"}>abc@gmail.com</Link>
+          <div className="md:flex space-x-4 hidden">
+            <a href="#">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i className="fab fa-instagram"></i>
+            </a>
           </div>
-        </div>
-        <div className="md:flex space-x-4 hidden">
-          <a href="#">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-    </header>
-    <nav className="bg-white text-secondary-main">
-        <div className="max-w-7xl mx-auto flex justify-between items-center md:py-2 py-2 md:px-0 px-4 ">
+        </MotionDiv>
+      </header>
+      <nav className="bg-white text-secondary-main max-w-7xl mx-auto overflow-hidden ">
+        <MotionDiv
+          variants={aboutVariants}
+          initial={aboutVariants.hiddenBottom}
+          animate={aboutVariants.visibleBottom}
+          className="flex justify-between items-center md:py-2 py-2 md:px-0 px-4 "
+        >
           <div className="flex items-center">
             <img
               alt="Company Logo"
@@ -83,8 +116,8 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-        </div>
+        </MotionDiv>
       </nav>
     </>
-  )
+  );
 }
