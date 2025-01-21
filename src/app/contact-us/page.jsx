@@ -81,7 +81,7 @@ export default function ContactUs() {
         </MotionDiv>
       </section>
 
-      <ContactUS />
+      {/* <ContactUS /> */}
       <ContactMap />
     </>
   );
