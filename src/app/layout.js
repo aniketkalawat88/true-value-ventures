@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
         className={`relative`}
         data-new-gr-c-s-check-loaded="14.1217.0"
         data-gr-ext-installed=""
+        cz-shortcut-listen="true"
       >
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"

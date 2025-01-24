@@ -49,6 +49,10 @@ export default function Navbar() {
       name: "Contact",
       link: "/contact-us",
     },
+    {
+      name: "Blogs",
+      link: "/blogs",
+    },
   ];
   return (
     <>
@@ -102,11 +106,11 @@ export default function Navbar() {
               src="/logo1.png"
             />
           </div>
-          <ul className="flex md:space-x-6 space-x-3">
+          <ul className="flex md:space-x-6 sm:space-x-3 space-x-2">
             {arr.map((ele, i) => (
               <li key={i}>
                 <Link
-                  className={`hover:text-gray-300 max-md:text-sm font-medium ${
+                  className={`hover:text-gray-300 md:text-base sm:text-sm text-xs font-medium ${
                     ele.link === path ? "text-primary-main" : ""
                   }`}
                   href={ele.link}
