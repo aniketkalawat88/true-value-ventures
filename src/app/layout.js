@@ -4,8 +4,8 @@ import Whatsapp from "./_components/whats-app";
 import "./globals.css";
 
 export const metadata = {
-  title: "True Value Ventures - Responsible Global Partners",
-  description: "Responsible Global Partners export and import market",
+  title: "True Value Ventures - Your Trusted Export and Import Partners",
+  description: "True Value Ventures specializes in global trade, offering reliable export and import solutions with a focus on sustainability, compliance, and market insights.",
 };
 
 export default function RootLayout({ children }) {
