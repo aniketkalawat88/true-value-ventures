@@ -36,7 +36,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="relative my-10 bg-primary-main text-white md:px-0 px-6">
+    <section id='contact' className="relative my-10 bg-primary-main text-white md:px-0 px-6">
       <img
         alt="Tanker truck"
         className="absolute inset-0 w-full h-full object-cover opacity-50"

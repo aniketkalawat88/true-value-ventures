@@ -91,8 +91,8 @@ const HeroSection = () => {
             <span className="md:text-heading-main drop-shadow-[0px_4px_4px_#C6A669]"></span>
             <span className="block">Your reliable export-import partner.</span>
           </MotionDiv>
-          <p className="md:text-2xl sm:text-xl text-xl font-medium md:mb-8 drop-shadow-[0px_4px_4px_#666666] max-md:mt-5">
-            {`Streamline your international trade operations with our expert export-import services. From cargo handling to customs clearance, we ensure seamless global logistics tailored to your business.`}
+          <p className="md:text-2xl sm:text-xl text-xl font-medium md:mb-8  drop-shadow-[0px_4px_4px_#666666] max-md:mt-5">
+            {`Unlock the full potential of your international trade operations with our comprehensive export-import services. We ensure your goods move smoothly and efficiently across borders, helping your business thrive in the global marketplace.`}
           </p>
         </div>
       </MotionSection>

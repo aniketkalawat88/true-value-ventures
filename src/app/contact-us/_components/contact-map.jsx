@@ -1,6 +1,7 @@
 "use client";
 
 import { MotionDiv } from "@/app/utils/motion-div";
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall, IoMail } from "react-icons/io5";
@@ -43,7 +44,14 @@ export default function ContactMap() {
 
   return (
     <div className="grid m grid-cols-1 md:gap-10 sm:gap-6 gap-4 my-10 max-w-7xl mx-auto xl:px-0 px-6 overflow-hidden">
-      <MotionDiv variants={variants} initial={variants.startleft} whileInView={variants.endLeft} transition={{ duration:0.4 , delay:0.4}}  viewport={{once:true}} className="rounded-lg overflow-hidden">
+      <MotionDiv
+        variants={variants}
+        initial={variants.startleft}
+        whileInView={variants.endLeft}
+        transition={{ duration: 0.4, delay: 0.4 }}
+        viewport={{ once: true }}
+        className="rounded-lg overflow-hidden"
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
           width="100%"
@@ -104,36 +112,42 @@ export default function ContactMap() {
         </div>
       </MotionDiv> */}
       <section>
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl overflow-hidden">
           <div className="grid md:grid-cols-2 items-center">
-            <MotionDiv variants={variants} initial={variants.startleft} whileInView={variants.endLeft} transition={{ duration:0.4 , delay:0.4}}  viewport={{once:true}} >
+            <MotionDiv
+              variants={variants}
+              initial={variants.startleft}
+              whileInView={variants.endLeft}
+              transition={{ duration: 0.4, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
               <p className="md:mt-3 md:text-lg text-base text-[#0F1416]">
-                What are you waiting for...
+                Don't hesitate, reach out to us now...
               </p>
               <p
-                className={`text-primary-main lg:text-[2.5rem] md:text-3xl text-2xl font-medium md:my-3 my-1  `}
+                className={`text-primary-main lg:text-[2.5rem] md:text-3xl text-2xl font-medium md:my-3 my-1`}
               >
-                Enquiry Now
+                Get in Touch Today
               </p>
               <p
-                className={` md:text-lg sm:text-base text-xs text-[#0F1416] md:mb-10 mb-4  `}
+                className={`md:text-lg sm:text-base text-xs text-[#0F1416] md:mb-10 mb-4`}
               >
-                If you have any questions or comments, please feel free to
-                contact us using the information below.
+                If you have any inquiries or would like further information,
+                feel free to reach us using the details below.
               </p>
               <ul className="mb-6 md:mb-0">
                 <li className="flex">
                   <div className="flex h-9 w-9 items-center justify-center rounded-full border border-primary-main text-primary-main ">
                     <IoCall className="text-xl" />
                   </div>
-                  <div className={`ml-4 md:mb-6 mb-4  `}>
+                  <div className={`ml-4 md:mb-6 mb-4`}>
                     <h3
                       className={`mb-2 md:text-2xl text-xl font-medium text-primary-main dark:text-primary-main/90`}
                     >
-                      Contact
+                      Phone
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
-                      +91 9876543210 , +91 1234657890
+                    <Link href="tel:+916260451165" className="hover:text-secondary-main transition-transform">+91 6260451165</Link>
                     </p>
                   </div>
                 </li>
@@ -141,14 +155,16 @@ export default function ContactMap() {
                   <div className="flex h-9 w-9 items-center justify-center rounded-full border border-primary-main text-primary-main ">
                     <IoMail className="text-xl" />
                   </div>
-                  <div className={`ml-4 md:mb-6 mb-4  `}>
+                  <div className={`ml-4 md:mb-6 mb-4`}>
                     <h3
                       className={`mb-2 md:text-2xl text-xl font-medium text-primary-main dark:text-primary-main/90`}
                     >
-                      Email
+                      Email Address
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
-                    info@global-trade.com
+                    <Link href="mailto:truevalueventures@gmail.com" className="hover:text-secondary-main transition-transform">
+                      truevalueventures@gmail.com
+                    </Link>
                     </p>
                   </div>
                 </li>
@@ -156,22 +172,30 @@ export default function ContactMap() {
                   <div className="flex h-9 w-9 items-center justify-center rounded-full border border-primary-main text-primary-main ">
                     <FaLocationDot className="text-xl" />
                   </div>
-                  <div className={`ml-4 md:mb-6 mb-4  `}>
+                  <div className={`ml-4 md:mb-6 mb-4`}>
                     <h3
                       className={`mb-2 md:text-2xl text-xl font-medium text-primary-main dark:text-primary-main/90`}
                     >
-                      Our Location
+                      Office Location
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
-                    Dubai Deira, Port Saeed, Al Sayegh Building
+                    Flaming-8, Aakriti Eco City, Bhopal-462039 (India)
                     </p>
                   </div>
                 </li>
               </ul>
             </MotionDiv>
-            <MotionDiv variants={variants} initial={variants.start} whileInView={variants.end} transition={{ duration:0.4 , delay:0.4}}  viewport={{once:true}} className="border border-primary-main rounded-xl p-4">
+
+            <MotionDiv
+              variants={variants}
+              initial={variants.start}
+              whileInView={variants.end}
+              transition={{ duration: 0.4, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="border border-primary-main rounded-xl p-4"
+            >
               {/* <Headcomp name={'Contact TenOnTen Stays'} /> */}
-              <form onSubmit={handleSubmit} >
+              <form onSubmit={handleSubmit}>
                 <div className=" grid md:grid-cols-2 gap-x-4">
                   <label>
                     <p className="text-xs font-semibold text-heading-main my-1">

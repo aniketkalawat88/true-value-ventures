@@ -4,44 +4,48 @@ import { MotionDiv } from "../utils/motion-div";
 export default function ServiceSection() {
   const arr = [
     {
-      icon: "fas fa-shipping-fast",
-      title: "Global Shipping",
+      icon: "fas fa-cogs",
+      title: "Rapeseed Meal",
       description:
-        "Reliable and efficient shipping services connecting international markets seamlessly.",
+        "A high-protein animal feed ingredient, perfect for livestock, poultry, and aquaculture diets.",
     },
     {
-      icon: "fas fa-warehouse",
-      title: "Storage & Packaging",
+      icon: "fas fa-truck",
+      title: "Livestock Feed Delivery",
       description:
-        "Secure storage and expert packaging to preserve product quality.",
+        "Fast and reliable delivery of quality animal feed to ensure your livestock stays healthy and nourished.",
     },
     {
-      icon: "fas fa-leaf",
-      title: "Fresh Produce Supply",
+      icon: "fas fa-piggy-bank",
+      title: "Affordable Pricing",
       description:
-        "Premium-quality fresh fruits and vegetables sourced from trusted growers.",
+        "Cost-effective feed solutions that meet both your budget and nutritional requirements.",
     },
     {
-      icon: "fas fa-globe",
-      title: "Market Expansion",
+      icon: "fas fa-seedling",
+      title: "Sustainable Sourcing",
       description:
-        "Strategic insights and opportunities to grow your business globally.",
+        "We source our ingredients sustainably to ensure the highest quality while supporting eco-friendly practices.",
     },
     {
-      icon: "fas fa-money-check",
-      title: "Competitive Pricing",
-      description: "Cost-effective solutions for all your export-import needs.",
+      icon: "fas fa-heartbeat",
+      title: "Nutrition Consultation",
+      description:
+        "Expert advice on formulating balanced diets for your animals to promote growth and overall health.",
     },
     {
-      icon: "fas fa-handshake",
-      title: "Trade Consultation",
-      description: "Expert advisory services to streamline your operations.",
+      icon: "fas fa-box-open",
+      title: "Packaging & Storage",
+      description:
+        "Reliable packaging and storage solutions to maintain the quality and freshness of animal feed products.",
     },
   ];
+
   const variants = {
     start: { x: 100, opacity: 0 },
     end: { x: 0, opacity: 1 },
   };
+
   return (
     <div className="container max-w-7xl mx-auto px-6 py-10 overflow-hidden">
       <h2 className="text-3xl font-bold text-primary-main text-center mb-8">
@@ -54,7 +58,7 @@ export default function ServiceSection() {
             initial={variants.start}
             whileInView={variants.end}
             transition={{ duration: 0.4, delay: 0.2 * index }}
-            viewport={{ once : true}}
+            viewport={{ once: true }}
             key={index}
             className="service-card bg-white p-6 shadow-md rounded-md text-center hover:shadow-lg hover:scale-105 transform transition-all"
           >

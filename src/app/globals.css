@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+*{
+  scroll-behavior: smooth;
+}
 
 .custom-video {
   width: 100%;

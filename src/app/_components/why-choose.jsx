@@ -8,24 +8,25 @@ export default function WhyChoose() {
   };
   const arr = [
     {
-      icon: "fas fa-star",
-      title: "Trusted Quality",
+      icon: "fas fa-leaf",
+      title: "Sustainable Practices",
       description:
-        "We deliver only the best, certified by global quality standards.",
+        "We prioritize eco-friendly practices, ensuring sustainability in every step of our operations.",
     },
     {
-      icon: "fas fa-truck",
-      title: "On-Time Delivery",
+      icon: "fas fa-cogs",
+      title: "High-Quality Ingredients",
       description:
-        "Ensuring your shipments arrive on time, every time.",
+        "We source premium raw materials, such as Rapeseed Meal, to guarantee the best nutrition for your animals.",
     },
     {
-      icon: "fas fa-users",
-      title: "Dedicated Support",
+      icon: "fas fa-shipping-fast",
+      title: "Efficient Logistics",
       description:
-        "Our team is available 24/7 to assist you with your trade needs.",
+        "Our streamlined logistics network ensures timely and reliable delivery, no matter your location.",
     },
-  ]
+  ];
+
   return (
     <div className="why-choose-us bg-white py-16">
       <div className="container max-w-7xl mx-auto px-6 text-center overflow-hidden">
@@ -35,11 +36,11 @@ export default function WhyChoose() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {arr.map((item, index) => (
             <MotionDiv
-            variants={variants}
-            initial={variants.start}
-            whileInView={variants.end}
-            transition={{ duration: 0.4, delay: 0.4 * index }}
-            viewport={{ once : true}}
+              variants={variants}
+              initial={variants.start}
+              whileInView={variants.end}
+              transition={{ duration: 0.4, delay: 0.4 * index }}
+              viewport={{ once: true }}
               key={index}
               className="bg-gray-100 p-6 shadow-sm rounded-md text-center hover:shadow-md"
             >

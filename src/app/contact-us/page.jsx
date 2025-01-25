@@ -5,14 +5,16 @@ import Testimonal from "../_components/testimonal";
 import ContactUS from "../_components/contact-us";
 import ContactMap from "./_components/contact-map";
 import { MotionDiv, MotionH2 } from "../utils/motion-div";
+import MissionVision from "./_components/mission-vision";
 
 export default function ContactUs() {
   const variants = {
-    start:{ x: 100 , opacity:0},
-    end:{ x: 0 , opacity : 1},
-    startUp: {y: 100 , opacity:0 },
-    endUp : { y: 0 , opacity:1}
-  }
+    start: { x: 100, opacity: 0 },
+    end: { x: 0, opacity: 1 },
+    startUp: { y: 100, opacity: 0 },
+    endUp: { y: 0, opacity: 1 },
+  };
+
   return (
     <>
       <link
@@ -32,55 +34,105 @@ export default function ContactUs() {
 
       <section className="my-10">
         <div className="max-w-7xl mx-auto px-6">
-          <MotionH2 variants={variants} initial={variants.start} whileInView={variants.end} transition={{ duration:0.4 , delay:0.4}} viewport={{once:true}} className="text-3xl font-bold text-secondary-main mb-6 text-center">
-            Why Our Customers Trust Us
+          <MotionH2
+            variants={variants}
+            initial={variants.start}
+            whileInView={variants.end}
+            transition={{ duration: 0.4, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-3xl font-bold text-secondary-main mb-6 text-center"
+          >
+            Why Choose TRUE VALUE VENTURES?
           </MotionH2>
-          <MotionDiv variants={variants} initial={variants.startUp} whileInView={variants.endUp} transition={{ duration:0.4 , delay:0.4}} viewport={{once:true}} className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 shadow-md text-center">
-              <i className="fas fa-thumbs-up text-secondary-main text-4xl mb-4"></i>
-              <h3 className="text-xl font-bold mb-2">Unmatched Quality</h3>
-              <p>
-                We prioritize delivering the finest produce to every client.
-              </p>
-            </div>
-            <div className="bg-white p-6 shadow-md text-center">
-              <i className="fas fa-handshake text-secondary-main text-4xl mb-4"></i>
-              <h3 className="text-xl font-bold mb-2">Reliable Partnerships</h3>
-              <p>
-                Trusted by global clients for consistent and dependable service.
-              </p>
-            </div>
-            <div className="bg-white p-6 shadow-md text-center">
-              <i className="fas fa-heart text-secondary-main text-4xl mb-4"></i>
-              <h3 className="text-xl font-bold mb-2">Customer-Centric</h3>
-              <p>Your satisfaction is at the heart of everything we do.</p>
-            </div>
-          </MotionDiv>
+          <div className="max-w-7xl mx-auto">
+            <MotionDiv
+              variants={variants}
+              initial={variants.startUp}
+              whileInView={variants.endUp}
+              transition={{ duration: 0.4, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            >
+              <div className="bg-white p-4 shadow-md text-center">
+                <i className="fas fa-check-circle text-secondary-main text-4xl mb-4"></i>
+                <h3 className="text-xl font-bold mb-2">Integrity</h3>
+                <p>
+                  For us, Integrity implies honesty and transparency in our
+                  business processes and the highest level of ethical behavior
+                  and professional act in customer services.
+                </p>
+              </div>
+              <div className="bg-white p-4 shadow-md text-center">
+                <i className="fas fa-handshake text-secondary-main text-4xl mb-4"></i>
+                <h3 className="text-xl font-bold mb-2">Customer First</h3>
+                <p>
+                  Customer demands for our products and their feedbacks are
+                  driving force for our growth and development. We create
+                  long-term relationships with customers through value addition
+                  in their products and processes.
+                </p>
+              </div>
+              <div className="bg-white p-4 shadow-md text-center">
+                <i className="fas fa-people-arrows text-secondary-main text-4xl mb-4"></i>
+                <h3 className="text-xl font-bold mb-2">Commitment</h3>
+                <p>
+                  We are committed to all our stakeholders adopting best
+                  practices in business operations to honor our deliverables to
+                  every person, entity, or organization associated with us.
+                </p>
+              </div>
+            </MotionDiv>
+          </div>
+
+          <section className="max-w-7xl mx-auto my-10">
+            <MotionDiv
+              variants={variants}
+              initial={variants.startUp}
+              whileInView={variants.endUp}
+              transition={{ duration: 0.4, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            >
+              <div className="bg-white p-4 shadow-md text-center">
+                <i className="fas fa-seedling text-secondary-main text-4xl mb-4"></i>
+                <h3 className="text-xl font-bold mb-2">
+                  Respect for Individual
+                </h3>
+                <p>
+                  We are committed to creating a work culture that encourages
+                  trust in the organization, respects individuals, and values
+                  diversity within the organization.
+                </p>
+              </div>
+              <div className="bg-white p-4 shadow-md text-center">
+                <i className="fas fa-globe text-secondary-main text-4xl mb-4"></i>
+                <h3 className="text-xl font-bold mb-2">
+                  Contribute to the Society
+                </h3>
+                <p>
+                  We believe that our responsibility as a member of society is
+                  to create value through improvements in healthcare, education,
+                  and caring for the environment.
+                </p>
+              </div>
+
+              <div className="bg-white p-4 shadow-md text-center">
+                <i className="fas fa-award text-secondary-main text-4xl mb-4"></i>
+                <h3 className="text-xl font-bold mb-2">
+                  Uncompromised Quality
+                </h3>
+                <p>
+                  Continuous improvement and strict quality controls for
+                  superior products.
+                </p>
+              </div>
+            </MotionDiv>
+          </section>
         </div>
       </section>
-      <section className="max-w-7xl mx-auto my-10 px-6">
-        <MotionDiv variants={variants} initial={variants.startUp} whileInView={variants.endUp} transition={{ duration:0.4 , delay:0.4}}  viewport={{once:true}} className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 shadow-md text-center">
-            <i className="fas fa-seedling text-secondary-main text-4xl mb-4"></i>
-            <h3 className="text-xl font-bold mb-2">Freshness Guaranteed</h3>
-            <p>Handpicked produce delivered with care to your doorstep.</p>
-          </div>
-          <div className="bg-white p-6 shadow-md text-center">
-            <i className="fas fa-plane text-secondary-main text-4xl mb-4"></i>
-            <h3 className="text-xl font-bold mb-2">Seamless Logistics</h3>
-            <p>
-              Efficient global supply chain ensuring timely deliveries
-              worldwide.
-            </p>
-          </div>
-          <div className="bg-white p-6 shadow-md text-center">
-            <i className="fas fa-hand-holding-heart text-secondary-main text-4xl mb-4"></i>
-            <h3 className="text-xl font-bold mb-2">Sustainable Practices</h3>
-            <p>Committed to eco-friendly and sustainable farming methods.</p>
-          </div>
-        </MotionDiv>
-      </section>
+      <MissionVision />
 
+      {/* Uncomment if ContactUS component is needed */}
       {/* <ContactUS /> */}
       <ContactMap />
     </>

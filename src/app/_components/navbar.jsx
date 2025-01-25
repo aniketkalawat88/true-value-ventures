@@ -63,32 +63,34 @@ export default function Navbar() {
           animate={aboutVariants.visibleTop}
           className="max-w-7xl mx-auto flex justify-between items-center py-4 md:px-0 px-2"
         >
-          <div className="flex items-center md:space-x-4 max-md:justify-between w-full max-md:text-sm px-2">
+          <div className="flex items-center md:space-x-4 max-md:justify-between w-full md:text-base sm:text-sm max-md:text-xs px-2">
             <div className="flex max-md:flex-col items-center md:space-x-4 space-x-1">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 hover:text-secondary-main transition-transform">
                 <IoCall />
-                <Link href={"tel:+98765432100"}>+98765432100</Link>
+                <Link href="tel:+916260451165">+91 6260451165</Link>
               </div>
               <div className="flex items-center space-x-2">
                 {/* <MdMail className=" md:hidden"></MdMail> {" "} */}
                 {/* <Link href={"tel:+9647509252524"} className="max-md:block w-full " >+9647509252524</Link> */}
               </div>
             </div>
-            <div className="space-x-2 flex items-center">
+            <div className="space-x-2 flex items-center hover:text-secondary-main transition-transform">
               <MdMail className="" />
-              <Link href={"mailto:abc@gmail.com"}>abc@gmail.com</Link>
+              <Link href="mailto:truevalueventures@gmail.com">
+                      truevalueventures@gmail.com
+                    </Link>
             </div>
           </div>
           <div className="md:flex space-x-4 hidden">
-            <a href="#">
+            <Link href="#" className="hover:text-secondary-main transition-transform">
               <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#" className="hover:text-secondary-main transition-transform">
               <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#" className="hover:text-secondary-main transition-transform">
               <i className="fab fa-instagram"></i>
-            </a>
+            </Link>
           </div>
         </MotionDiv>
       </header>
@@ -99,13 +101,13 @@ export default function Navbar() {
           animate={aboutVariants.visibleBottom}
           className="flex justify-between items-center md:py-2 py-2 md:px-0 px-4 "
         >
-          <div className="flex items-center">
+          <Link href={'/'} className="flex items-center">
             <img
               alt="Company Logo"
               className="md:h-16 h-12 object-contain"
               src="/logo1.png"
             />
-          </div>
+          </Link>
           <ul className="flex md:space-x-6 sm:space-x-3 space-x-2">
             {arr.map((ele, i) => (
               <li key={i}>
