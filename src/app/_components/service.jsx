@@ -78,7 +78,7 @@ export default function Service() {
                   <Link href={'tel:+916260451165'} className="bg-primary-main text-white p-2 text-center">
                     Call Now
                   </Link>
-                  <Link href={'#contact'} className="text-primary-main p-2">
+                  <Link href={'/#contact'} className="text-primary-main p-2">
                     Enquiry Now
                   </Link>
                 </div>

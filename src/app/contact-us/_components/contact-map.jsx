@@ -8,17 +8,17 @@ import { IoCall, IoMail } from "react-icons/io5";
 
 export default function ContactMap() {
   const [isVal, setIsVal] = useState({
-    name: "",
-    country: "",
-    email: "",
-    whatsappNumber: "",
-    product: "",
-    incoterm: "",
-    port: "",
-    requirement: "",
+    Name: "",
+    Email: "",
+    Number: "",
+    Country: "",
+    Product: "",
+    Incoterm: "",
+    Port: "",
+    Requirement: "",
   });
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   // Handle input changes
   const handleChange = (event) => {
@@ -30,10 +30,42 @@ export default function ContactMap() {
   };
 
   // Handle form submission
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent form refresh
-    console.log("Form data:", isVal); // Log the form data to the console
-    setIsLoading(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Form Data:", isVal);
+
+    try {
+      setLoading(true);
+      const response = await fetch("https://sheetdb.io/api/v1/nk2b5gozjtzhz", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify([isVal]), // Send as an array of objects
+      });
+      setLoading(false);
+
+      if (response.ok) {
+        alert("Form submitted successfully");
+        // Optionally, reset form fields
+        setIsVal({
+          Name: "",
+          Email: "",
+          Number: "",
+          Country: "",
+          Product: "",
+          Incoterm: "",
+          Port: "",
+          Requirement: "",
+        });
+      } else {
+        alert("Failed to submit form");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setLoading(false);
+      alert("An error occurred while submitting the form");
+    }
   };
   const variants = {
     start: { x: 100, opacity: 0 },
@@ -206,8 +238,8 @@ export default function ContactMap() {
                       id="name"
                       placeholder="Your name"
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
-                      name="name"
-                      value={isVal.name}
+                      name="Name"
+                      value={isVal.Name}
                       onChange={handleChange}
                     />
                   </label>
@@ -220,8 +252,8 @@ export default function ContactMap() {
                       id="country"
                       placeholder="Your country"
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
-                      name="country"
-                      value={isVal.country}
+                      name="Country"
+                      value={isVal.Country}
                       onChange={handleChange}
                     />
                   </label>
@@ -234,8 +266,8 @@ export default function ContactMap() {
                       id="email"
                       placeholder="Your email address"
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
-                      name="email"
-                      value={isVal.email}
+                      name="Email"
+                      value={isVal.Email}
                       onChange={handleChange}
                     />
                   </label>
@@ -248,8 +280,8 @@ export default function ContactMap() {
                       id="whatsappNumber"
                       placeholder="Your WhatsApp number"
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
-                      name="whatsappNumber"
-                      value={isVal.whatsappNumber}
+                      name="Number"
+                      value={isVal.Number}
                       onChange={handleChange}
                     />
                   </label>
@@ -262,8 +294,8 @@ export default function ContactMap() {
                       id="product"
                       placeholder="Product"
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
-                      name="product"
-                      value={isVal.product}
+                      name="Product"
+                      value={isVal.Product}
                       onChange={handleChange}
                     />
                   </label>
@@ -276,8 +308,8 @@ export default function ContactMap() {
                       id="incoterm"
                       placeholder="Incoterm"
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
-                      name="incoterm"
-                      value={isVal.incoterm}
+                      name="Incoterm"
+                      value={isVal.Incoterm}
                       onChange={handleChange}
                     />
                   </label>
@@ -290,8 +322,8 @@ export default function ContactMap() {
                       id="port"
                       placeholder="Port"
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
-                      name="port"
-                      value={isVal.port}
+                      name="Port"
+                      value={isVal.Port}
                       onChange={handleChange}
                     />
                   </label>
@@ -302,15 +334,15 @@ export default function ContactMap() {
                     <textarea
                       placeholder="Write your detailed requirement..."
                       className="outline-none mb-2 w-full rounded-md border h-20 border-gray-400 py-1 md:text-base text-sm pl-2 pr-4 resize-none"
-                      name="requirement"
-                      value={isVal.requirement}
+                      name="Requirement"
+                      value={isVal.Requirement}
                       onChange={handleChange}
                     ></textarea>
                   </label>
                 </div>
                 <div className="text-center">
                   <button className="w-full bg-primary-main text-white px-6 py-2 text-sm font-xl rounded-md sm:mb-0 flex justify-center items-center gap-2">
-                    Send Message{" "}
+                  {loading ? "Submitting" : "Submit"}
                     {/* {isLoading && <span className="animate-spin">.</span>} */}
                   </button>
                 </div>

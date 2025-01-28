@@ -59,7 +59,7 @@ export default function Footer() {
             </li>
             <li>
               <Link className="hover:text-secondary-main transition-transform" href="/services">
-                Our Services
+                Our Products
               </Link>
             </li>
             <li>

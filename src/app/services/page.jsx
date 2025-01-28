@@ -5,6 +5,7 @@ import ServiceSection from "../_components/service-section";
 import WhyChoose from "../_components/why-choose";
 import OurClients from "../_components/our-clients";
 import Link from "next/link";
+import ProductDropdown from "../_components/product";
 
 export default function Services() {
   return (
@@ -14,6 +15,7 @@ export default function Services() {
         img={"https://media.licdn.com/dms/image/v2/D4E12AQEciG6Nxvmvhg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1702509848175?e=2147483647&v=beta&t=hkPjxyM_x6vVQxwVDTmWBfwgWg4G8zvIG3GvChb4yZk"} 
       />
       <Service />
+      <ProductDropdown />
       <div className="services-page bg-gray-100">
         <div className="hero-section bg-primary-main text-white py-20 text-center">
           <h1 className="md:text-4xl text-2xl font-bold mb-4">

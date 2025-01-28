@@ -1,18 +1,19 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
-import { MotionDiv } from '../utils/motion-div';
+import React, { useState } from "react";
+import { MotionDiv } from "../utils/motion-div";
 
 export default function ContactUs() {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
-    name: '',
-    country: '',
-    email: '',
-    whatsappNumber: '',
-    product: '',
-    incoterm: '',
-    port: '',
-    requirement: '',
+    Name: "",
+    Country: "",
+    Email: "",
+    Number: "",
+    Product: "",
+    Incoterm: "",
+    Port: "",
+    Requirement: "",
   });
 
   const variants = {
@@ -30,13 +31,49 @@ export default function ContactUs() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Data:', formData);
+    console.log("Form Data:", formData);
+
+    try {
+      setLoading(true);
+      const response = await fetch("https://sheetdb.io/api/v1/nk2b5gozjtzhz", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify([formData]), // Send as an array of objects
+      });
+      setLoading(false);
+
+      if (response.ok) {
+        alert("Form submitted successfully");
+        // Optionally, reset form fields
+        setFormData({
+          Name: "",
+          Email: "",
+          Number: "",
+          Country: "",
+          Product: "",
+          Incoterm: "",
+          Port: "",
+          Requirement: "",
+        });
+      } else {
+        alert("Failed to submit form");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setLoading(false);
+      alert("An error occurred while submitting the form");
+    }
   };
 
   return (
-    <section id='contact' className="relative my-10 bg-primary-main text-white md:px-0 px-6">
+    <section
+      id="contact"
+      className="relative my-10 bg-primary-main text-white md:px-0 px-6"
+    >
       <img
         alt="Tanker truck"
         className="absolute inset-0 w-full h-full object-cover opacity-50"
@@ -47,12 +84,14 @@ export default function ContactUs() {
         initial={variants.startUp}
         whileInView={variants.endUp}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, delay: 0.3, type: 'spring' }}
+        transition={{ duration: 0.7, delay: 0.3, type: "spring" }}
         className="max-w-7xl mx-auto md:py-10 py-6 relative z-10"
       >
         <div className="text-center">
           <h2 className="text-3xl font-bold uppercase">Enquiry Now</h2>
-          <p className="md:mt-4 mt-2">We always use best &amp; fastest fleets</p>
+          <p className="md:mt-4 mt-2">
+            We always use best &amp; fastest fleets
+          </p>
         </div>
         <form
           className="md:mt-8 mt-4 max-w-5xl mx-auto bg-white md:p-8 p-4 rounded-lg shadow-md text-black"
@@ -63,78 +102,77 @@ export default function ContactUs() {
               className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
               placeholder="Name"
               type="text"
-              name="name"
-              value={formData.name}
+              name="Name"
+              value={formData.Name}
               onChange={handleChange}
             />
             <input
               className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
               placeholder="Country"
               type="text"
-              name="country"
-              value={formData.country}
+              name="Country"
+              value={formData.Country}
               onChange={handleChange}
             />
             <input
               className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
               placeholder="Email"
               type="email"
-              name="email"
-              value={formData.email}
+              name="Email"
+              value={formData.Email}
               onChange={handleChange}
             />
             <input
               className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
               placeholder="WhatsApp Number"
               type="text"
-              name="whatsappNumber"
-              value={formData.whatsappNumber}
+              name="Number"
+              value={formData.Number}
               onChange={handleChange}
             />
             <input
               className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
               placeholder="Product"
               type="text"
-              name="product"
-              value={formData.product}
+              name="Product"
+              value={formData.Product}
               onChange={handleChange}
             />
             <input
               className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
               placeholder="Incoterm"
               type="text"
-              name="incoterm"
-              value={formData.incoterm}
+              name="Incoterm"
+              value={formData.Incoterm}
               onChange={handleChange}
             />
             <input
               className="md:py-2 py-1 px-4 rounded-lg border border-gray-300 md:col-span-2"
               placeholder="Port"
               type="text"
-              name="port"
-              value={formData.port}
+              name="Port"
+              value={formData.Port}
               onChange={handleChange}
             />
           </div>
           <textarea
             className="mt-4 md:py-2 py-1 px-4 rounded-lg border border-gray-300 w-full resize-none md:h-28 h-16"
             placeholder="Detailed Requirement"
-            name="requirement"
-            value={formData.requirement}
+            name="Requirement"
+            value={formData.Requirement}
             onChange={handleChange}
           />
           <button
             type="submit"
             className="mt-4 py-2 px-6 bg-primary-main hover:bg-primary-main rounded-md text-white"
           >
-            Submit
+            {loading ? "Submitting" : "Submit"}
           </button>
         </form>
       </MotionDiv>
     </section>
   );
 }
-
 
 // {/* <div className="relative">
 // <video className="custom-video max-md:h-[300px]" loop playsInline muted autoPlay>

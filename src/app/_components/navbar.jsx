@@ -38,12 +38,12 @@ export default function Navbar() {
       link: "/",
     },
     {
-      name: "Services",
-      link: "/services",
-    },
-    {
       name: "About",
       link: "/about-us",
+    },
+    {
+      name: "Products",
+      link: "/services",
     },
     {
       name: "Contact",
@@ -112,7 +112,7 @@ export default function Navbar() {
             {arr.map((ele, i) => (
               <li key={i}>
                 <Link
-                  className={`hover:text-gray-300 md:text-base sm:text-sm text-xs font-medium ${
+                  className={`hover:text-gray-300 md:text-lg sm:text-base text-xs font-medium ${
                     ele.link === path ? "text-primary-main" : ""
                   }`}
                   href={ele.link}
