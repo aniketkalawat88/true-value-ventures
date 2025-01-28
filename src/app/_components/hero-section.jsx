@@ -119,7 +119,7 @@ const HeroSection = () => {
       }}
       navigation={true}  
       modules={[Autoplay, Pagination, Navigation]}
-      className="mySwiper relative text-white overflow-hidden lg:h-[40vw] md:h-[40vw] sm:h-[50vw] h-[95vh]"
+      className="mySwiper relative text-white overflow-hidden lg:h-[40vw] md:h-[40vw] sm:h-[50vw] h-[70vh]"
     >
       {
         arr.map((ele, i) => (
