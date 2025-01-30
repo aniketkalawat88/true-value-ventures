@@ -13,8 +13,8 @@ const BlogPage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/blogs"); // Replace with your backend URL
-        console.log(response.data.blogs)
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/blogs`); // Replace with your backend URL
+        // console.log(response.data.blogs)
         setBlogs(response.data.blogs);
       } catch (error) {
         console.error("Error fetching blogs:", error);
@@ -32,7 +32,7 @@ const BlogPage = () => {
       if (!confirmDelete) return;
   
       try {
-        await axios.delete(`http://localhost:5000/api/blogs/${id}`); // API Call
+        await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/api/blogs/${id}`); // API Call
         setBlogs(blogs.filter((blog) => blog._id !== id)); // Remove from UI
       } catch (error) {
         console.error("Error deleting blog:", error);

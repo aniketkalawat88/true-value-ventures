@@ -33,7 +33,7 @@ const CreateProductPage = () => {
     if (blog.image) formData.append("image", blog.image);
 
     try {
-      await axios.post("http://localhost:5000/api/blogs", formData, {
+      await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/blogs`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("blog created successfully!");

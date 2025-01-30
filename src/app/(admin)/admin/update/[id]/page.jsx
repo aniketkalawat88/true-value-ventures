@@ -25,14 +25,14 @@ const UpdateBlogPage = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/blogs/${blogId}`);
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/blogs/${blogId}`);
         setBlog({
           title: response.data.title,
           description: response.data.description,
           author: response.data.author,
           image: response.data.image,
         });
-        console.log(response,"fghk")
+        // console.log(response,"fghk")
         setPreviewImage(response.data.image);
       } catch (error) {
         console.error("Error fetching blog:", error);
@@ -70,7 +70,7 @@ const UpdateBlogPage = () => {
         formData.append("image", blog.image); // Only append if a new image is uploaded
       }
 
-      await axios.put(`http://localhost:5000/api/blogs/${blogId}`, formData, {
+      await axios.put(`${process.env.NEXT_PUBLIC_API_URL}/api/blogs/${blogId}`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
