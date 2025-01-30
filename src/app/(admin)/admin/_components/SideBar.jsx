@@ -1,7 +1,26 @@
+"use client"
+
 import Link from 'next/link'
-import React from 'react'
+import { useRouter } from 'next/navigation';
+import React, { useEffect, useState } from 'react'
 
 export default function Sidebar() {
+  const router = useRouter();
+  const [adminData, setAdminData] = useState(null);
+  useEffect(() => {
+    const loginData = localStorage.getItem("login");
+
+    if (loginData) {
+      const parsedData = JSON.parse(loginData);
+      if (parsedData.isLoggedIn) {
+        setAdminData(parsedData);
+      } else {
+        router.push("/login"); // Redirect if not logged in
+      }
+    } else {
+      router.push("/login"); // Redirect if no data found
+    }
+  }, []);
   return (
     <div className="hidden md:flex flex-col w-64 bg-primary-main">
     <div className="flex items-center justify-center h-16 bg-gray-900">

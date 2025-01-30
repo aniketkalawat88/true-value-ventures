@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         cz-shortcut-listen="true"
-        data-new-gr-c-s-check-loaded="14.1218.0"
+        data-new-gr-c-s-check-loaded="14.1219.0"
         data-gr-ext-installed=""
       >
         <div className="flex h-screen bg-gray-100">

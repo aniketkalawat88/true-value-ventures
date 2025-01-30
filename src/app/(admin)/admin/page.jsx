@@ -18,6 +18,7 @@ const BlogPage = () => {
         setBlogs(response.data.blogs);
       } catch (error) {
         console.error("Error fetching blogs:", error);
+        alert("Check Network Connection")
       } finally {
         setLoading(false);
       }
