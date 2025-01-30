@@ -1,4 +1,4 @@
-import { MotionDiv } from '@/app/utils/motion-div'
+import { MotionDiv } from '@/app/(root)/utils/motion-div'
 import React from 'react'
 
 export default function MissionVision() {

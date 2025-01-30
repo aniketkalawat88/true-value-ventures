@@ -1,6 +1,6 @@
 "use client";
 
-import { MotionDiv } from "@/app/utils/motion-div";
+import { MotionDiv } from "@/app/(root)/utils/motion-div";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
