@@ -139,7 +139,7 @@ export default function BlogPage() {
             <div className="p-4 flex flex-col">
               <span className="text-sm text-gray-500 mb-2">{blog.category}</span>
               <h3 className="text-lg font-bold text-primary-main mb-3">{blog.title}</h3>
-              <p className="text-sm text-secondary-main mb-4 line-clamp-2">{blog.description}</p>
+              <p className="text-sm text-gray-700 mb-4 line-clamp-2">{blog.description}</p>
               <Link
                 href={`/blogs/${blog._id}`}
                 className="mt-auto inline-block text-sm font-medium text-primary-main hover:underline"

@@ -34,11 +34,11 @@
   transform: translatey(0px);
   animation: pulse 1.5s infinite;
   box-shadow: 0 0 0 0 #54a15d;
-  -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  /* -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; */
 }
 @keyframes pulsing {
   to {
@@ -62,7 +62,7 @@
 
 
 @-webkit-keyframes pulse{
-  0%{
+  /* 0%{
     -webkit-transform: scale(0.9);
   }
   50%{
@@ -70,7 +70,7 @@
   }
   100%{ 
     -webkit-transform: scale(0.9);
-  }
+  } */
 }
 .mypage-alo-phone {
     /* position: fixed;
@@ -95,11 +95,11 @@
         border-radius: 100%;
         border: 2px solid transparent;
         opacity: .7;
-        -webkit-transition: all 0.2s ease-in-out;
+        /* -webkit-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
         -ms-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; */
         -webkit-transform-origin: 50% 50%;
         -moz-transform-origin: 50% 50%;
         -ms-transform-origin: 50% 50%;
@@ -118,7 +118,7 @@
     position: absolute;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
+    /* -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     -webkit-border-radius: 100%;
@@ -131,7 +131,7 @@
     transition: all .5s;
     background-color: hsl(130, 66%, 30% , 0.5);
     opacity: .75 !important;
-    -webkit-animation: pulse 1s infinite;
+    -webkit-animation: pulse 1s infinite; */
 }
 .mypage-alo-ph-circle{
     width: 90px;
