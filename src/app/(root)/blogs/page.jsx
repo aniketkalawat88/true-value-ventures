@@ -127,7 +127,7 @@ export default function BlogPage() {
         {blogs.map((blog , i) => (
           <li
             key={i}
-            className="relative flex flex-col items-start bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            className="relative flex flex-col items-start bg-white rounded-lg shadow-md  hover:shadow-lg transition-shadow duration-300"
           >
             <div className="w-full h-56 overflow-hidden">
               <img
@@ -136,16 +136,16 @@ export default function BlogPage() {
                 className="object-cover h-full w-full"
               />
             </div>
-            <div className="p-4 flex flex-col flex-grow">
+            <div className="p-4 flex flex-col">
               <span className="text-sm text-gray-500 mb-2">{blog.category}</span>
               <h3 className="text-lg font-bold text-primary-main mb-3">{blog.title}</h3>
-              <p className="text-sm text-secondary-main mb-4">{blog.description}</p>
-              {/* <Link
-                href={blog.link}
+              <p className="text-sm text-secondary-main mb-4 line-clamp-2">{blog.description}</p>
+              <Link
+                href={`/blogs/${blog._id}`}
                 className="mt-auto inline-block text-sm font-medium text-primary-main hover:underline"
               >
                 Read More
-              </Link> */}
+              </Link>
             </div>
           </li>
         ))}

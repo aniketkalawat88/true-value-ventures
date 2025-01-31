@@ -143,7 +143,7 @@ const UpdateBlogPage = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className={`w-full p-3 text-white font-semibold rounded ${updating ? "bg-gray-500" : "bg-blue-600 hover:bg-blue-700"}`}
+            className={`w-full p-3 text-white font-semibold rounded ${updating ? "bg-gray-500" : "bg-primary-main hover:bg-primary-main/80"}`}
             disabled={updating}
           >
             {updating ? "Updating..." : "Update Blog"}

@@ -54,8 +54,8 @@ const BlogPage = () => {
             <div key={blog._id} className="p-4 border rounded-lg shadow-md">
             <img src={blog.image} alt={blog.title} className="w-full h-64 object-cover rounded-lg mb-4" />
             <div>
-              <h2 className="text-2xl font-semibold">{blog.title}</h2>
-              <p className="text-gray-600 truncate">{blog.description}</p>
+              <h2 className="text-2xl font-semibold line-clamp-1">{blog.title}</h2>
+              <p className="text-gray-600 line-clamp-2">{blog.description}</p>
               <p className="text-sm text-gray-500 mt-2">By - {blog.author} on {new Date(blog.date).toLocaleDateString()}</p>
 
               {/* Buttons: Update & Delete */}
