@@ -41,6 +41,13 @@ const HeroSection = () => {
       detail:
         "With a focus on quality and customer satisfaction, we serve as a dependable partner for businesses of all sizes in the global trade arena.",
     },
+    {
+      img: "https://www.umaexports.net/images/pulses.jpg",
+      val1: "Trade for Produts",
+      val2: "Delivering Quality Products Worldwide.",
+      detail:
+        "We specialize in the export and import of premium agricultural commodities, food grains, pulses, spices, and other essential goods, ensuring quality and timely delivery across global markets",
+    },
   ];
 
   const variants = {
@@ -111,7 +118,7 @@ const HeroSection = () => {
       spaceBetween={30}
       centeredSlides={true}
       autoplay={{
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -119,7 +126,7 @@ const HeroSection = () => {
       }}
       navigation={true}  
       modules={[Autoplay, Pagination, Navigation]}
-      className="mySwiper relative text-white overflow-hidden lg:h-[40vw] md:h-[40vw] sm:h-[50vw] h-[70vh]"
+      className="mySwiper relative text-white overflow-hidden lg:h-[30vw] md:h-[30vw] sm:h-[50vw] h-[60vh]"
     >
       {
         arr.map((ele, i) => (
@@ -130,7 +137,7 @@ const HeroSection = () => {
                 alt="Background Image"
                 className="object-cover object-center w-full h-full"
               />
-              <div className="absolute inset-0 bg-primary-main opacity-30" />
+              <div className="absolute inset-0 bg-primary-main opacity-10" />
             </div>
             <div className="relative z-10 flex flex-col justify-center items-center h-full text-center w-full md:p-0 sm:p-4 p-4 max-sm:text-center">
               <div className="lg:text-[3.41rem] md:text-4xl sm:text-3xl text-3xl font-bold xl:leading-tight md:mb-10 sm:mb-6 drop-shadow-[0px_4px_4px_#666666] max-md:w-full">

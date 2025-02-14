@@ -11,10 +11,10 @@ export default function Services() {
   return (
     <div>
       <HeroSection2 
-        name={"Animal Feed Ingredients - Rapeseed Meal"} 
-        img={"https://media.licdn.com/dms/image/v2/D4E12AQEciG6Nxvmvhg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1702509848175?e=2147483647&v=beta&t=hkPjxyM_x6vVQxwVDTmWBfwgWg4G8zvIG3GvChb4yZk"} 
+        name={"Our Products"} 
+        img={"https://www.umaexports.net/images/pulses.jpg"} 
       />
-      <Service />
+      {/* <Service /> */}
       <ProductDropdown />
       <div className="services-page bg-gray-100">
         <div className="hero-section bg-primary-main text-white py-20 text-center">

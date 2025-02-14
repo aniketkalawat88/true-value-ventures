@@ -46,12 +46,12 @@ export default function Navbar() {
       link: "/services",
     },
     {
-      name: "Contact",
-      link: "/contact-us",
-    },
-    {
       name: "Blogs",
       link: "/blogs",
+    },
+    {
+      name: "Contact",
+      link: "/contact-us",
     },
   ];
   return (
@@ -67,7 +67,7 @@ export default function Navbar() {
             <div className="flex max-md:flex-col items-center md:space-x-4 space-x-1">
               <div className="flex items-center space-x-2 hover:text-secondary-main transition-transform">
                 <IoCall />
-                <Link href="tel:+916260451165">+91 6260451165</Link>
+                <Link href="tel:+919993185960">+91 9993185960</Link>
               </div>
               <div className="flex items-center space-x-2">
                 {/* <MdMail className=" md:hidden"></MdMail> {" "} */}
@@ -76,9 +76,9 @@ export default function Navbar() {
             </div>
             <div className="space-x-2 flex items-center hover:text-secondary-main transition-transform">
               <MdMail className="" />
-              <Link href="mailto:truevalueventures@gmail.com">
-                      truevalueventures@gmail.com
-                    </Link>
+              <Link href="mailto:admin@truevalueventures.in">
+                admin@truevalueventures.in
+              </Link>
             </div>
           </div>
           <div className="md:flex space-x-4 hidden">
@@ -104,11 +104,12 @@ export default function Navbar() {
           <Link href={'/'} className="flex items-center">
             <img
               alt="Company Logo"
-              className="md:h-16 h-12 object-contain"
+              className="md:h-16 h-12 object-contain md:scale-110"
               src="/logo1.png"
             />
           </Link>
-          <ul className="flex md:space-x-6 sm:space-x-3 space-x-2">
+          <div>
+          <ul className="flex md:space-x-14 sm:space-x-3 space-x-2">
             {arr.map((ele, i) => (
               <li key={i}>
                 <Link
@@ -122,6 +123,8 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+
+          </div>
         </MotionDiv>
       </nav>
     </>

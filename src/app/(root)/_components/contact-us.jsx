@@ -99,7 +99,7 @@ export default function ContactUs() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-3 md:text-base text-sm">
             <input
-              className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
+              className="md:py-2 py-1 px-4 rounded-lg border border-primary-main"
               placeholder="Name"
               type="text"
               name="Name"
@@ -107,7 +107,7 @@ export default function ContactUs() {
               onChange={handleChange}
             />
             <input
-              className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
+              className="md:py-2 py-1 px-4 rounded-lg border border-primary-main"
               placeholder="Country"
               type="text"
               name="Country"
@@ -115,7 +115,7 @@ export default function ContactUs() {
               onChange={handleChange}
             />
             <input
-              className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
+              className="md:py-2 py-1 px-4 rounded-lg border border-primary-main"
               placeholder="Email"
               type="email"
               name="Email"
@@ -123,23 +123,34 @@ export default function ContactUs() {
               onChange={handleChange}
             />
             <input
-              className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
+              className="md:py-2 py-1 px-4 rounded-lg border border-primary-main"
               placeholder="WhatsApp Number"
               type="text"
               name="Number"
               value={formData.Number}
               onChange={handleChange}
             />
-            <input
-              className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
-              placeholder="Product"
-              type="text"
+            <select
+              className="md:py-2 py-1 px-4 rounded-lg border border-primary-main"
               name="Product"
               value={formData.Product}
               onChange={handleChange}
-            />
+            >
+              <option value="">Select Product</option>
+              <option value="Rapeseed (Canola) Meal">Rapeseed (Canola) Meal</option>
+              <option value="Rapeseed (Canola) Oil">Rapeseed (Canola) Oil</option>
+              <option value="Dehydrated Onion Flakes">Dehydrated Onion Flakes</option>
+              <option value="Dehydrated Onion Granules">Dehydrated Onion Granules</option>
+              <option value="Dehydrated Onion Powder">Dehydrated Onion Powder</option>
+              <option value="Dehydrated Garlic Flakes">Dehydrated Garlic Flakes</option>
+              <option value="Dehydrated Garlic Granules">Dehydrated Garlic Granules</option>
+              <option value="Dehydrated Garlic Powder">Dehydrated Garlic Powder</option>
+              <option value="Biomass Pellets & Briquettes">Biomass Pellets & Briquettes</option>
+            </select>
+
+
             <input
-              className="md:py-2 py-1 px-4 rounded-lg border border-gray-300"
+              className="md:py-2 py-1 px-4 rounded-lg border border-primary-main"
               placeholder="Incoterm"
               type="text"
               name="Incoterm"
@@ -147,7 +158,7 @@ export default function ContactUs() {
               onChange={handleChange}
             />
             <input
-              className="md:py-2 py-1 px-4 rounded-lg border border-gray-300 md:col-span-2"
+              className="md:py-2 py-1 px-4 rounded-lg border border-primary-main md:col-span-2"
               placeholder="Port"
               type="text"
               name="Port"
@@ -156,7 +167,7 @@ export default function ContactUs() {
             />
           </div>
           <textarea
-            className="mt-4 md:py-2 py-1 px-4 rounded-lg border border-gray-300 w-full resize-none md:h-28 h-16"
+            className="mt-4 md:py-2 py-1 px-4 rounded-lg border border-primary-main w-full resize-none md:h-28 h-16"
             placeholder="Detailed Requirement"
             name="Requirement"
             value={formData.Requirement}

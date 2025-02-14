@@ -84,7 +84,7 @@ export default function CompanyProfile() {
           {coreValues.map((value, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition"
+              className="bg-white border shadow border-primary-main rounded-lg p-6 text-center hover:shadow-lg transition"
             >
               <h3 className="text-xl font-semibold text-primary-main mb-4">{value.title}</h3>
               <p className="text-gray-700">{value.description}</p>

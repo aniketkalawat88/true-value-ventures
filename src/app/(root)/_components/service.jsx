@@ -51,7 +51,7 @@ export default function Service() {
     <section className="md:my-10 my-6 bg-white">
       <div className="max-w-7xl mx-auto text-center overflow-hidden">
         <h2 className="md:text-3xl text-2xl font-bold text-primary-main">
-          OUR SERVICES
+          OUR VALUES
         </h2>
         <div className="flex flex-wrap justify-center md:mt-8">
           {services.map((service, index) => (
@@ -75,8 +75,8 @@ export default function Service() {
                   <p className="mt-2 text-gray-600">{service.description}</p>
                 </div>
                 <div className="grid grid-cols-2 border border-primary-main rounded-b-lg mf:text-base text-sm">
-                  <Link href={'tel:+916260451165'} className="bg-primary-main text-white p-2 text-center">
-                    Call Now
+                  <Link href={'mailto:admin@truevalueventures.in'} className="bg-primary-main text-white p-2 text-center">
+                    Mail Now
                   </Link>
                   <Link href={'/#contact'} className="text-primary-main p-2">
                     Enquiry Now

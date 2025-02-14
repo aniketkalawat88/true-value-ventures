@@ -76,7 +76,7 @@ export default function ContactMap() {
 
   return (
     <div className="grid m grid-cols-1 md:gap-10 sm:gap-6 gap-4 my-10 max-w-7xl mx-auto xl:px-0 px-6 overflow-hidden">
-      <MotionDiv
+      {/* <MotionDiv
         variants={variants}
         initial={variants.startleft}
         whileInView={variants.endLeft}
@@ -92,7 +92,7 @@ export default function ContactMap() {
           allowFullScreen=""
           loading="lazy"
         />
-      </MotionDiv>
+      </MotionDiv> */}
       {/* <MotionDiv variants={variants} initial={variants.startleft} whileInView={variants.endLeft} transition={{ duration:0.4 , delay:0.4}}  viewport={{once:true}} className="rounded-lg overflow-hidden">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
@@ -159,7 +159,7 @@ export default function ContactMap() {
               <p
                 className={`text-primary-main lg:text-[2.5rem] md:text-3xl text-2xl font-medium md:my-3 my-1`}
               >
-                Get in Touch Today
+                Get in Touch
               </p>
               <p
                 className={`md:text-lg sm:text-base text-xs text-[#0F1416] md:mb-10 mb-4`}
@@ -179,7 +179,7 @@ export default function ContactMap() {
                       Phone
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
-                    <Link href="tel:+916260451165" className="hover:text-secondary-main transition-transform">+91 6260451165</Link>
+                    <Link href="tel:+919993185960" className="hover:text-secondary-main transition-transform">+91 9993185960</Link>
                     </p>
                   </div>
                 </li>
@@ -194,8 +194,8 @@ export default function ContactMap() {
                       Email Address
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
-                    <Link href="mailto:truevalueventures@gmail.com" className="hover:text-secondary-main transition-transform">
-                      truevalueventures@gmail.com
+                    <Link href="mailto:admin@truevalueventures.in" className="hover:text-secondary-main transition-transform">
+                    admin@truevalueventures.in
                     </Link>
                     </p>
                   </div>
@@ -208,7 +208,7 @@ export default function ContactMap() {
                     <h3
                       className={`mb-2 md:text-2xl text-xl font-medium text-primary-main dark:text-primary-main/90`}
                     >
-                      Office Location
+                     Address
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
                     Flaming-8, Aakriti Eco City, Bhopal-462039 (India)
@@ -286,19 +286,27 @@ export default function ContactMap() {
                     />
                   </label>
                   <label className="md:col-span-2">
-                    <p className="text-xs font-semibold text-heading-main my-1 ">
-                      Product
-                    </p>
-                    <input
-                      type="text"
+                    <p className="text-xs font-semibold text-heading-main my-1">Product</p>
+                    <select
                       id="product"
-                      placeholder="Product"
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
                       name="Product"
                       value={isVal.Product}
                       onChange={handleChange}
-                    />
+                    >
+                      <option value="">Select Product</option>
+                      <option value="Rapeseed (Canola) Meal">Rapeseed (Canola) Meal</option>
+                      <option value="Rapeseed (Canola) Oil">Rapeseed (Canola) Oil</option>
+                      <option value="Dehydrated Onion Flakes">Dehydrated Onion Flakes</option>
+                      <option value="Dehydrated Onion Granules">Dehydrated Onion Granules</option>
+                      <option value="Dehydrated Onion Powder">Dehydrated Onion Powder</option>
+                      <option value="Dehydrated Garlic Flakes">Dehydrated Garlic Flakes</option>
+                      <option value="Dehydrated Garlic Granules">Dehydrated Garlic Granules</option>
+                      <option value="Dehydrated Garlic Powder">Dehydrated Garlic Powder</option>
+                      <option value="Biomass Pellets & Briquettes">Biomass Pellets & Briquettes</option>
+                    </select>
                   </label>
+
                   <label>
                     <p className="text-xs font-semibold text-heading-main my-1">
                       Incoterm

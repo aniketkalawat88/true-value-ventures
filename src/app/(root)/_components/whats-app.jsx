@@ -5,7 +5,7 @@ import React from "react";
 export default function Whatsapp() {
   return (
     <div>
-       <Link href="https://api.whatsapp.com/send?phone=+916260451165&text=Hey!%20Can%20I%20Get%20More%20Info%20On%20This?" target='_blank' className="fixed text-4xl right-[3vw] bottom-[3vw] z-30 max-sm:p-4">
+       <Link href="https://api.whatsapp.com/send?phone=+919993185960&text=Hey!%20Can%20I%20Get%20More%20Info%20On%20This?" target='_blank' className="fixed text-4xl right-[3vw] bottom-[3vw] z-30 max-sm:p-4">
             <div className="grid justify-items-center gap-2">
                 <div className="contact_icon ">
                     <img src="/WhatsApp.svg" alt="" className=" my-float h-12 w-12" />
@@ -14,7 +14,7 @@ export default function Whatsapp() {
             </div>
         </Link>
       <Link
-        href="tel:+916260451165"
+        href="tel:+919993185960"
         target="_blank"
         className="fixed text-4xl left-[3vw] bottom-[3.5vw] z-30 max-sm:p-4 md:scale-110"
       >
@@ -26,3 +26,5 @@ export default function Whatsapp() {
     </div>
   );
 }
+
+// 6260451165

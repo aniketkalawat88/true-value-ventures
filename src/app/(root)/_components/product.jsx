@@ -57,7 +57,7 @@ const ProductSelector = () => {
   return (
     <div className="bg-secondary-main/10 my-10 p-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center">
-        <h1 className="text-3xl font-bold mb-6 text-primary-main">Our Product</h1>
+        {/* <h1 className="text-3xl font-bold mb-6 text-primary-main">Our Product</h1> */}
         <select 
             onChange={(e) => setSelectedProduct(e.target.value)} 
             value={selectedProduct} 
