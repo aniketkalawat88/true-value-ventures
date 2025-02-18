@@ -12,7 +12,7 @@ export default function Services() {
     <div>
       <HeroSection2 
         name={"Our Products"} 
-        img={"https://www.umaexports.net/images/pulses.jpg"} 
+        img={"/02.png"} 
       />
       {/* <Service /> */}
       <ProductDropdown />

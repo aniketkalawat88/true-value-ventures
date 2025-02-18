@@ -24,15 +24,32 @@ export default function CompanyProfile() {
       {/* Company Profile Section */}
       <section className="text-center mb-12">
         <h2 className="text-3xl font-bold text-primary-main mb-6">Company Profile</h2>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          True Value Ventures is an internationally oriented trading company based in India,
-          specializing in the export of premium Indian agricultural products directly from farm
-          partners to global markets. Established in 2021, the company has quickly gained
-          recognition for its dedication to quality, customer satisfaction, and timely delivery in
-          the competitive global trade landscape. Additionally, through its partner company,
-          True Value Bio Energy, the company is one of India’s largest manufacturers of biomass
-          pellets.
+        <p className="text-lg text-gray-700 leading-relaxed text-justify">
+          <strong>True Value Ventures</strong> is an internationally oriented trading company based in India, 
+          specializing in the export of premium Indian agricultural products directly from farm 
+          partners to global markets. Established in 2021, the company has quickly gained recognition 
+          for its dedication to quality, customer satisfaction, and timely delivery in the competitive 
+          global trade landscape. Additionally, through its partner company, 
+          <strong><u>True Value Bio Energy</u></strong>, the company is one of India’s largest manufacturers of 
+          biomass pellets.
         </p>
+
+        <p className="text-lg text-gray-700 leading-relaxed text-justify">
+          Our company has established a robust network of dedicated partners who work tirelessly, 
+          around the clock, to source products directly from the regions in India where they are grown 
+          or manufactured in abundance, ensuring a steady and maximum supply of high-quality products.
+        </p>
+
+        <p className="text-lg text-gray-700 leading-relaxed text-justify">
+          <strong>"True Value Venture"</strong> is proud to partner with <strong>Vandana Arts India</strong> 
+          to bring forth an exclusive collection of Indian handicraft artifacts, featuring an array of 
+          traditional art forms, including Madhubani Art, Lipan Art, Warli Art, Mural Art, leather paintings 
+          and art, Ceramic Arts, and other artistic creations. This collaboration enables us to provide our 
+          clients with a diverse range of authentic, high-quality products that reflect the country's rich 
+          cultural <strong><u>diversity</u></strong>, while supporting the preservation and promotion of traditional 
+          Indian art forms.
+        </p>
+
         {/* <h3 className="text-2xl font-semibold text-primary-main mt-8">Products</h3>
         <ul className="text-lg text-gray-700 mt-4 list-disc list-inside">
           <li>Mustard (Canola) Oil</li>

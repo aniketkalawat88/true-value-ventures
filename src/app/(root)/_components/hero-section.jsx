@@ -42,7 +42,7 @@ const HeroSection = () => {
         "With a focus on quality and customer satisfaction, we serve as a dependable partner for businesses of all sizes in the global trade arena.",
     },
     {
-      img: "https://www.umaexports.net/images/pulses.jpg",
+      img: "/02.png",
       val1: "Trade for Produts",
       val2: "Delivering Quality Products Worldwide.",
       detail:

@@ -308,19 +308,31 @@ export default function ContactMap() {
                   </label>
 
                   <label>
-                    <p className="text-xs font-semibold text-heading-main my-1">
-                      Incoterm
-                    </p>
-                    <input
-                      type="text"
-                      id="incoterm"
-                      placeholder="Incoterm"
-                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
-                      name="Incoterm"
-                      value={isVal.Incoterm}
-                      onChange={handleChange}
-                    />
-                  </label>
+  <p className="text-xs font-semibold text-heading-main my-1">
+    Incoterm
+  </p>
+  <select
+    id="incoterm"
+    name="Incoterm"
+    value={isVal.Incoterm}
+    onChange={handleChange}
+    className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
+  >
+    <option value="">Select Incoterm</option>
+    <option value="EXW">EXW - Ex Works (Place)</option>
+    <option value="FCA">FCA - Free Carrier (Place)</option>
+    <option value="FAS">FAS - Free Alongside Ship (Port)</option>
+    <option value="FOB">FOB - Free On Board (Port)</option>
+    <option value="CFR">CFR - Cost and Freight (Port)</option>
+    <option value="CIF">CIF - Cost, Insurance & Freight (Port)</option>
+    <option value="CPT">CPT - Carriage Paid To (Place)</option>
+    <option value="CIP">CIP - Carriage & Insurance Paid To (Place)</option>
+    <option value="DAP">DAP - Delivered at Place (Place)</option>
+    <option value="DPU">DPU - Delivered at Place Unloaded (Place)</option>
+    <option value="DDP">DDP - Delivered Duty Paid (Place)</option>
+  </select>
+</label>
+
                   <label>
                     <p className="text-xs font-semibold text-heading-main my-1">
                       Port

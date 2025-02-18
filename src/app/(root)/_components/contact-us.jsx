@@ -148,15 +148,26 @@ export default function ContactUs() {
               <option value="Biomass Pellets & Briquettes">Biomass Pellets & Briquettes</option>
             </select>
 
+            <select
+  className="md:py-2 py-1 px-4 rounded-lg border border-primary-main"
+  name="Incoterm"
+  value={formData.Incoterm}
+  onChange={handleChange}
+>
+  <option value="">Select Incoterm</option>
+  <option value="EXW">EXW - Ex Works (Place)</option>
+  <option value="FCA">FCA - Free Carrier (Place)</option>
+  <option value="FAS">FAS - Free Alongside Ship (Port)</option>
+  <option value="FOB">FOB - Free On Board (Port)</option>
+  <option value="CFR">CFR - Cost and Freight (Port)</option>
+  <option value="CIF">CIF - Cost, Insurance & Freight (Port)</option>
+  <option value="CPT">CPT - Carriage Paid To (Place)</option>
+  <option value="CIP">CIP - Carriage & Insurance Paid To (Place)</option>
+  <option value="DAP">DAP - Delivered at Place (Place)</option>
+  <option value="DPU">DPU - Delivered at Place Unloaded (Place)</option>
+  <option value="DDP">DDP - Delivered Duty Paid (Place)</option>
+</select>
 
-            <input
-              className="md:py-2 py-1 px-4 rounded-lg border border-primary-main"
-              placeholder="Incoterm"
-              type="text"
-              name="Incoterm"
-              value={formData.Incoterm}
-              onChange={handleChange}
-            />
             <input
               className="md:py-2 py-1 px-4 rounded-lg border border-primary-main md:col-span-2"
               placeholder="Port"
