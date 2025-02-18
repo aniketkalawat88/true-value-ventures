@@ -130,7 +130,7 @@ export default function ContactUs() {
           </section>
         </div>
       </section>
-      <MissionVision />
+      {/* <MissionVision /> */}
 
       {/* Uncomment if ContactUS component is needed */}
       {/* <ContactUS /> */}

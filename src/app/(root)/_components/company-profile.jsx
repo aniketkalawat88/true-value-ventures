@@ -20,9 +20,9 @@ export default function CompanyProfile() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
+    <div className="max-w-7xl mx-auto px-6 py-12">
       {/* Company Profile Section */}
-      <section className="text-center mb-12">
+      <section className="text-center mb-6">
         <h2 className="text-3xl font-bold text-primary-main mb-6">Company Profile</h2>
         <p className="text-lg text-gray-700 leading-relaxed text-justify">
           <strong>True Value Ventures</strong> is an internationally oriented trading company based in India, 
