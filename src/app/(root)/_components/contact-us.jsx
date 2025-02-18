@@ -137,40 +137,64 @@ export default function ContactUs() {
               onChange={handleChange}
             >
               <option value="">Select Product</option>
-              <option value="Rapeseed (Canola) Meal">Rapeseed (Canola) Meal</option>
-              <option value="Rapeseed (Canola) Oil">Rapeseed (Canola) Oil</option>
-              <option value="Dehydrated Onion Flakes">Dehydrated Onion Flakes</option>
-              <option value="Dehydrated Onion Granules">Dehydrated Onion Granules</option>
-              <option value="Dehydrated Onion Powder">Dehydrated Onion Powder</option>
-              <option value="Dehydrated Garlic Flakes">Dehydrated Garlic Flakes</option>
-              <option value="Dehydrated Garlic Granules">Dehydrated Garlic Granules</option>
-              <option value="Dehydrated Garlic Powder">Dehydrated Garlic Powder</option>
-              <option value="Biomass Pellets & Briquettes">Biomass Pellets & Briquettes</option>
+              <option value="Rapeseed (Canola) Meal">
+                Rapeseed (Canola) Meal
+              </option>
+              <option value="Rapeseed (Canola) Oil">
+                Rapeseed (Canola) Oil
+              </option>
+              <option value="Dehydrated Onion Flakes">
+                Dehydrated Onion Flakes
+              </option>
+              <option value="Dehydrated Onion Granules">
+                Dehydrated Onion Granules
+              </option>
+              <option value="Dehydrated Onion Powder">
+                Dehydrated Onion Powder
+              </option>
+              <option value="Dehydrated Garlic Flakes">
+                Dehydrated Garlic Flakes
+              </option>
+              <option value="Dehydrated Garlic Granules">
+                Dehydrated Garlic Granules
+              </option>
+              <option value="Dehydrated Garlic Powder">
+                Dehydrated Garlic Powder
+              </option>
+              <option value="Biomass Pellets & Briquettes">
+                Biomass Pellets & Briquettes
+              </option>
             </select>
 
             <select
-  className="md:py-2 py-1 px-4 rounded-lg border border-primary-main"
-  name="Incoterm"
-  value={formData.Incoterm}
-  onChange={handleChange}
->
-  <option value="">Select Incoterm</option>
-  <option value="EXW">EXW - Ex Works (Place)</option>
-  <option value="FCA">FCA - Free Carrier (Place)</option>
-  <option value="FAS">FAS - Free Alongside Ship (Port)</option>
-  <option value="FOB">FOB - Free On Board (Port)</option>
-  <option value="CFR">CFR - Cost and Freight (Port)</option>
-  <option value="CIF">CIF - Cost, Insurance & Freight (Port)</option>
-  <option value="CPT">CPT - Carriage Paid To (Place)</option>
-  <option value="CIP">CIP - Carriage & Insurance Paid To (Place)</option>
-  <option value="DAP">DAP - Delivered at Place (Place)</option>
-  <option value="DPU">DPU - Delivered at Place Unloaded (Place)</option>
-  <option value="DDP">DDP - Delivered Duty Paid (Place)</option>
-</select>
+              className="md:py-2 py-1 px-4 rounded-lg border border-primary-main"
+              name="Incoterm"
+              value={formData.Incoterm}
+              onChange={handleChange}
+            >
+              <option value="">Select Incoterm</option>
+              <option value="EXW">EXW - Ex Works (Place)</option>
+              <option value="FCA">FCA - Free Carrier (Place)</option>
+              <option value="FAS">FAS - Free Alongside Ship (Port)</option>
+              <option value="FOB">FOB - Free On Board (Port)</option>
+              <option value="CFR">CFR - Cost and Freight (Port)</option>
+              <option value="CIF">
+                CIF - Cost, Insurance & Freight (Port)
+              </option>
+              <option value="CPT">CPT - Carriage Paid To (Place)</option>
+              <option value="CIP">
+                CIP - Carriage & Insurance Paid To (Place)
+              </option>
+              <option value="DAP">DAP - Delivered at Place (Place)</option>
+              <option value="DPU">
+                DPU - Delivered at Place Unloaded (Place)
+              </option>
+              <option value="DDP">DDP - Delivered Duty Paid (Place)</option>
+            </select>
 
             <input
               className="md:py-2 py-1 px-4 rounded-lg border border-primary-main md:col-span-2"
-              placeholder="Port"
+              placeholder="Destination Port"
               type="text"
               name="Port"
               value={formData.Port}

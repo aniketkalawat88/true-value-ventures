@@ -179,7 +179,12 @@ export default function ContactMap() {
                       Phone
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
-                    <Link href="tel:+919993185960" className="hover:text-secondary-main transition-transform">+91 9993185960</Link>
+                      <Link
+                        href="tel:+919993185960"
+                        className="hover:text-secondary-main transition-transform"
+                      >
+                        +91 9993185960
+                      </Link>
                     </p>
                   </div>
                 </li>
@@ -194,9 +199,12 @@ export default function ContactMap() {
                       Email Address
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
-                    <Link href="mailto:admin@truevalueventures.in" className="hover:text-secondary-main transition-transform">
-                    admin@truevalueventures.in
-                    </Link>
+                      <Link
+                        href="mailto:admin@truevalueventures.in"
+                        className="hover:text-secondary-main transition-transform"
+                      >
+                        admin@truevalueventures.in
+                      </Link>
                     </p>
                   </div>
                 </li>
@@ -208,10 +216,10 @@ export default function ContactMap() {
                     <h3
                       className={`mb-2 md:text-2xl text-xl font-medium text-primary-main dark:text-primary-main/90`}
                     >
-                     Address
+                      Address
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
-                    Flaming-8, Aakriti Eco City, Bhopal-462039 (India)
+                      Flaming-8, Aakriti Eco City, Bhopal-462039 (India)
                     </p>
                   </div>
                 </li>
@@ -286,7 +294,9 @@ export default function ContactMap() {
                     />
                   </label>
                   <label className="md:col-span-2">
-                    <p className="text-xs font-semibold text-heading-main my-1">Product</p>
+                    <p className="text-xs font-semibold text-heading-main my-1">
+                      Product
+                    </p>
                     <select
                       id="product"
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
@@ -295,52 +305,84 @@ export default function ContactMap() {
                       onChange={handleChange}
                     >
                       <option value="">Select Product</option>
-                      <option value="Rapeseed (Canola) Meal">Rapeseed (Canola) Meal</option>
-                      <option value="Rapeseed (Canola) Oil">Rapeseed (Canola) Oil</option>
-                      <option value="Dehydrated Onion Flakes">Dehydrated Onion Flakes</option>
-                      <option value="Dehydrated Onion Granules">Dehydrated Onion Granules</option>
-                      <option value="Dehydrated Onion Powder">Dehydrated Onion Powder</option>
-                      <option value="Dehydrated Garlic Flakes">Dehydrated Garlic Flakes</option>
-                      <option value="Dehydrated Garlic Granules">Dehydrated Garlic Granules</option>
-                      <option value="Dehydrated Garlic Powder">Dehydrated Garlic Powder</option>
-                      <option value="Biomass Pellets & Briquettes">Biomass Pellets & Briquettes</option>
+                      <option value="Rapeseed (Canola) Meal">
+                        Rapeseed (Canola) Meal
+                      </option>
+                      <option value="Rapeseed (Canola) Oil">
+                        Rapeseed (Canola) Oil
+                      </option>
+                      <option value="Dehydrated Onion Flakes">
+                        Dehydrated Onion Flakes
+                      </option>
+                      <option value="Dehydrated Onion Granules">
+                        Dehydrated Onion Granules
+                      </option>
+                      <option value="Dehydrated Onion Powder">
+                        Dehydrated Onion Powder
+                      </option>
+                      <option value="Dehydrated Garlic Flakes">
+                        Dehydrated Garlic Flakes
+                      </option>
+                      <option value="Dehydrated Garlic Granules">
+                        Dehydrated Garlic Granules
+                      </option>
+                      <option value="Dehydrated Garlic Powder">
+                        Dehydrated Garlic Powder
+                      </option>
+                      <option value="Biomass Pellets & Briquettes">
+                        Biomass Pellets & Briquettes
+                      </option>
                     </select>
                   </label>
 
                   <label>
-  <p className="text-xs font-semibold text-heading-main my-1">
-    Incoterm
-  </p>
-  <select
-    id="incoterm"
-    name="Incoterm"
-    value={isVal.Incoterm}
-    onChange={handleChange}
-    className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
-  >
-    <option value="">Select Incoterm</option>
-    <option value="EXW">EXW - Ex Works (Place)</option>
-    <option value="FCA">FCA - Free Carrier (Place)</option>
-    <option value="FAS">FAS - Free Alongside Ship (Port)</option>
-    <option value="FOB">FOB - Free On Board (Port)</option>
-    <option value="CFR">CFR - Cost and Freight (Port)</option>
-    <option value="CIF">CIF - Cost, Insurance & Freight (Port)</option>
-    <option value="CPT">CPT - Carriage Paid To (Place)</option>
-    <option value="CIP">CIP - Carriage & Insurance Paid To (Place)</option>
-    <option value="DAP">DAP - Delivered at Place (Place)</option>
-    <option value="DPU">DPU - Delivered at Place Unloaded (Place)</option>
-    <option value="DDP">DDP - Delivered Duty Paid (Place)</option>
-  </select>
-</label>
+                    <p className="text-xs font-semibold text-heading-main my-1">
+                      Incoterm
+                    </p>
+                    <select
+                      id="incoterm"
+                      name="Incoterm"
+                      value={isVal.Incoterm}
+                      onChange={handleChange}
+                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
+                    >
+                      <option value="">Select Incoterm</option>
+                      <option value="EXW">EXW - Ex Works (Place)</option>
+                      <option value="FCA">FCA - Free Carrier (Place)</option>
+                      <option value="FAS">
+                        FAS - Free Alongside Ship (Port)
+                      </option>
+                      <option value="FOB">FOB - Free On Board (Port)</option>
+                      <option value="CFR">CFR - Cost and Freight (Port)</option>
+                      <option value="CIF">
+                        CIF - Cost, Insurance & Freight (Port)
+                      </option>
+                      <option value="CPT">
+                        CPT - Carriage Paid To (Place)
+                      </option>
+                      <option value="CIP">
+                        CIP - Carriage & Insurance Paid To (Place)
+                      </option>
+                      <option value="DAP">
+                        DAP - Delivered at Place (Place)
+                      </option>
+                      <option value="DPU">
+                        DPU - Delivered at Place Unloaded (Place)
+                      </option>
+                      <option value="DDP">
+                        DDP - Delivered Duty Paid (Place)
+                      </option>
+                    </select>
+                  </label>
 
                   <label>
                     <p className="text-xs font-semibold text-heading-main my-1">
-                      Port
+                      Destination Port
                     </p>
                     <input
                       type="text"
                       id="port"
-                      placeholder="Port"
+                      placeholder="Destination Port"
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
                       name="Port"
                       value={isVal.Port}
@@ -362,7 +404,7 @@ export default function ContactMap() {
                 </div>
                 <div className="text-center">
                   <button className="w-full bg-primary-main text-white px-6 py-2 text-sm font-xl rounded-md sm:mb-0 flex justify-center items-center gap-2">
-                  {loading ? "Submitting" : "Submit"}
+                    {loading ? "Submitting" : "Submit"}
                     {/* {isLoading && <span className="animate-spin">.</span>} */}
                   </button>
                 </div>

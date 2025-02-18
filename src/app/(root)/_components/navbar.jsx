@@ -104,8 +104,8 @@ export default function Navbar() {
           <Link href={'/'} className="flex items-center">
             <img
               alt="Company Logo"
-              className="md:h-16 h-12 object-contain md:scale-110"
-              src="/logo1.png"
+              className="md:h-16 h-12 object-contain md:scale-125"
+              src="/logo3.png"
             />
           </Link>
           <div>
