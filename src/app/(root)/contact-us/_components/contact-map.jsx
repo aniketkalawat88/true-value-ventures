@@ -332,6 +332,12 @@ export default function ContactMap() {
                       <option value="Biomass Pellets & Briquettes">
                         Biomass Pellets & Briquettes
                       </option>
+                      <option value="Indian Organic Millets">
+                        Indian Organic Millets
+                      </option>
+                      <option value="Indian Handicrafts">
+                        Indian Handicrafts
+                      </option>
                     </select>
                   </label>
 
@@ -347,30 +353,30 @@ export default function ContactMap() {
                       className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
                     >
                       <option value="">Select Incoterm</option>
-                      <option value="EXW">EXW - Ex Works (Place)</option>
-                      <option value="FCA">FCA - Free Carrier (Place)</option>
+                      <option value="EXW">EXW</option>
+                      <option value="FCA">FCA</option>
                       <option value="FAS">
-                        FAS - Free Alongside Ship (Port)
+                        FAS 
                       </option>
-                      <option value="FOB">FOB - Free On Board (Port)</option>
-                      <option value="CFR">CFR - Cost and Freight (Port)</option>
+                      <option value="FOB">FOB</option>
+                      <option value="CFR">CFR</option>
                       <option value="CIF">
-                        CIF - Cost, Insurance & Freight (Port)
+                        CIF
                       </option>
                       <option value="CPT">
-                        CPT - Carriage Paid To (Place)
+                        CPT
                       </option>
                       <option value="CIP">
-                        CIP - Carriage & Insurance Paid To (Place)
+                        CIP
                       </option>
                       <option value="DAP">
-                        DAP - Delivered at Place (Place)
+                        DAP 
                       </option>
                       <option value="DPU">
-                        DPU - Delivered at Place Unloaded (Place)
+                        DPU
                       </option>
                       <option value="DDP">
-                        DDP - Delivered Duty Paid (Place)
+                        DDP 
                       </option>
                     </select>
                   </label>

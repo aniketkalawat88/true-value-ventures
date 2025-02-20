@@ -65,7 +65,7 @@ export default function Navbar() {
         >
           <div className="flex items-center md:space-x-4 max-md:justify-between w-full md:text-base sm:text-sm max-md:text-xs px-2">
             <div className="flex max-md:flex-col items-center md:space-x-4 space-x-1">
-              <div className="flex items-center space-x-2 hover:text-secondary-main transition-transform">
+              <div className="flex items-center space-x-2 hover:text-secondary-main transition-transform border-2 rounded p-1 px-2 bg-white text-primary-main">
                 <IoCall />
                 <Link href="tel:+919993185960">+91 9993185960</Link>
               </div>
@@ -74,7 +74,7 @@ export default function Navbar() {
                 {/* <Link href={"tel:+9647509252524"} className="max-md:block w-full " >+9647509252524</Link> */}
               </div>
             </div>
-            <div className="space-x-2 flex items-center hover:text-secondary-main transition-transform">
+            <div className="space-x-2 flex items-center hover:text-secondary-main transition-transform border-2 rounded p-1 px-2 bg-white text-primary-main">
               <MdMail className="" />
               <Link href="mailto:admin@truevalueventures.in">
                 admin@truevalueventures.in
@@ -104,7 +104,7 @@ export default function Navbar() {
           <Link href={'/'} className="flex items-center">
             <img
               alt="Company Logo"
-              className="md:h-16 h-12 object-contain md:scale-125"
+              className="md:h-20 h-12 object-contain md:scale-125"
               src="/logo3.png"
             />
           </Link>

@@ -1,4 +1,5 @@
 import React from "react";
+import HeaingComp from "./heaing-comp";
 
 export default function CompanyProfile() {
   const coreValues = [
@@ -23,30 +24,30 @@ export default function CompanyProfile() {
     <div className="max-w-7xl mx-auto px-6 py-12">
       {/* Company Profile Section */}
       <section className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-primary-main mb-6">Company Profile</h2>
+        <h2 className="text-3xl font-bold text-primary-main mb-6"> <HeaingComp name="Company Profile" /></h2>
         <p className="text-lg text-gray-700 leading-relaxed text-justify">
           <strong>True Value Ventures</strong> is an internationally oriented trading company based in India, 
           specializing in the export of premium Indian agricultural products directly from farm 
           partners to global markets. Established in 2021, the company has quickly gained recognition 
           for its dedication to quality, customer satisfaction, and timely delivery in the competitive 
           global trade landscape. Additionally, through its partner company, 
-          <strong><u>True Value Bio Energy</u></strong>, the company is one of India’s largest manufacturers of 
+          <strong>True Value Bio Energy</strong>, the company is one of India’s largest manufacturers of 
           biomass pellets.
         </p>
 
-        <p className="text-lg text-gray-700 leading-relaxed text-justify">
+        <p className="text-lg text-gray-700 leading-relaxed text-justify mt-3">
           Our company has established a robust network of dedicated partners who work tirelessly, 
           around the clock, to source products directly from the regions in India where they are grown 
           or manufactured in abundance, ensuring a steady and maximum supply of high-quality products.
         </p>
 
-        <p className="text-lg text-gray-700 leading-relaxed text-justify">
-          <strong>"True Value Venture"</strong> is proud to partner with <strong>Vandana Arts India</strong> 
+        <p className="text-lg text-gray-700 leading-relaxed text-justify mt-3">
+          <strong>"True Value Venture"</strong> is proud to partner with <strong>Vandana Arts India </strong> 
           to bring forth an exclusive collection of Indian handicraft artifacts, featuring an array of 
           traditional art forms, including Madhubani Art, Lipan Art, Warli Art, Mural Art, leather paintings 
           and art, Ceramic Arts, and other artistic creations. This collaboration enables us to provide our 
           clients with a diverse range of authentic, high-quality products that reflect the country's rich 
-          cultural <strong><u>diversity</u></strong>, while supporting the preservation and promotion of traditional 
+          cultural diversity, while supporting the preservation and promotion of traditional 
           Indian art forms.
         </p>
 
@@ -96,7 +97,7 @@ export default function CompanyProfile() {
 
       {/* Core Values Section */}
       <section className="text-center">
-        <h2 className="text-3xl font-bold text-primary-main mb-6">Core Values</h2>
+        <h2 className="mb-6"><HeaingComp name="Core Values" /> </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {coreValues.map((value, index) => (
             <div

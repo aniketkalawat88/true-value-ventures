@@ -164,6 +164,12 @@ export default function ContactUs() {
               <option value="Biomass Pellets & Briquettes">
                 Biomass Pellets & Briquettes
               </option>
+              <option value="Indian Organic Millets">
+              Indian Organic Millets
+              </option>
+              <option value="Indian Handicrafts">
+              Indian Handicrafts
+              </option>
             </select>
 
             <select
@@ -173,23 +179,23 @@ export default function ContactUs() {
               onChange={handleChange}
             >
               <option value="">Select Incoterm</option>
-              <option value="EXW">EXW - Ex Works (Place)</option>
-              <option value="FCA">FCA - Free Carrier (Place)</option>
-              <option value="FAS">FAS - Free Alongside Ship (Port)</option>
-              <option value="FOB">FOB - Free On Board (Port)</option>
-              <option value="CFR">CFR - Cost and Freight (Port)</option>
+              <option value="EXW">EXW</option>
+              <option value="FCA">FCA</option>
+              <option value="FAS">FAS)</option>
+              <option value="FOB">FOB)</option>
+              <option value="CFR">CFR)</option>
               <option value="CIF">
-                CIF - Cost, Insurance & Freight (Port)
+                CIF
               </option>
-              <option value="CPT">CPT - Carriage Paid To (Place)</option>
+              <option value="CPT">CPT </option>
               <option value="CIP">
-                CIP - Carriage & Insurance Paid To (Place)
+                CIP
               </option>
-              <option value="DAP">DAP - Delivered at Place (Place)</option>
+              <option value="DAP">DAP </option>
               <option value="DPU">
-                DPU - Delivered at Place Unloaded (Place)
+                DPU 
               </option>
-              <option value="DDP">DDP - Delivered Duty Paid (Place)</option>
+              <option value="DDP">DDP </option>
             </select>
 
             <input

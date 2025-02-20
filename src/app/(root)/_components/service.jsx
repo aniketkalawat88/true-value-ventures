@@ -51,7 +51,7 @@ export default function Service() {
     <section className="md:my-10 my-6 bg-white">
       <div className="max-w-7xl mx-auto text-center overflow-hidden">
         <h2 className="md:text-3xl text-2xl font-bold text-primary-main">
-          OUR VALUES
+          Our Values
         </h2>
         <div className="flex flex-wrap justify-center md:mt-8">
           {services.map((service, index) => (

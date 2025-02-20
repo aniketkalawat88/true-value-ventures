@@ -38,10 +38,7 @@ export default function Footer() {
         <div className="col-span-2">
           <h4 className="font-bold mb-4">About Us</h4>
           <p>
-            We specialize in the export and import of fresh fruits, vegetables,
-            and essential goods, connecting local farmers and suppliers with
-            global markets. Our focus on quality, sustainability, and timely
-            delivery ensures we are a trusted partner in international trade.
+          We specialized in the export and import of Value added products including fruits , vegetables , green fuel , Indian Organic products especially Millets and best of Indian Handicraft connecting local farmers and supplies with global markets. Our focus on quality , sustainability and timely delivery ensures that we are reliable partners in international trade.
           </p>
         </div>
         <div className="col-span-1">

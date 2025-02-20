@@ -1,5 +1,6 @@
 import { MotionDiv } from '@/app/(root)/utils/motion-div'
 import React from 'react'
+import HeaingComp from '../../_components/heaing-comp';
 
 export default function MissionVision() {
     const variants = {
@@ -12,8 +13,8 @@ export default function MissionVision() {
    
     <MotionDiv variants={variants} initial={variants.startUp} whileInView={variants.endUp} transition={{ duration: 0.4, delay: 0.4 }} viewport={{ once: true }} className=' max-w-7xl mx-auto overflow-hidden'>
     <div className="md:mb-10 mb-5 px-6 md:px-0 text-[#0F1416] text-center">
-      <h2 className="text-primary-main lg:text-[2.5rem] md:text-3xl text-2xl font-medium">
-        Mission & Vision
+      <h2 className="">
+        <HeaingComp name=" Mission & Vision" />
       </h2>
       <p className="md:text-lg sm:text-base text-base mt-4 text-justify">
         Our mission is to produce and continually provide quality products at a competitive price while fostering a climate where environmental technologies can thrive. We will always strive to service our customer with the utmost integrity, and to their complete satisfaction.

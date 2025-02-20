@@ -1,4 +1,5 @@
 import React from "react";
+import HeaingComp from "./heaing-comp";
 
 export default function OwnerInfo() {
   return (
@@ -15,7 +16,7 @@ export default function OwnerInfo() {
         {/* Information Section */}
         <div className="md:col-span-2 bg-white shadow-md rounded-lg md:p-8 p-4">
           <h2 className="text-3xl font-bold text-primary-main mb-6 text-center md:text-left">
-            Our Founder
+          <HeaingComp name="Our Founder" />
           </h2>
           <h3 className="text-2xl font-semibold text-secondary-main mb-4">
             Mr. Rahul Singh
