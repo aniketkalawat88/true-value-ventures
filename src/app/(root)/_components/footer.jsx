@@ -77,14 +77,14 @@ export default function Footer() {
             alt="Verified by certification"
             className="mb-4 h-16"
             height={50}
-            src="https://storage.googleapis.com/a1aa/image/7e7Gy9w8uq1qRyHgQwsMq2umNhWVYIO2SgMfccXdm1f5ymePB.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/International_Electrotechnical_Commission_Logo.svg/1200px-International_Electrotechnical_Commission_Logo.svg.png"
             width={100}
           />
           <img
             alt="Trusted Seller certification"
             height={50}
-            className="h-10"
-            src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20240501175105.jpg"
+            className="h-16"
+            src="https://5.imimg.com/data5/SELLER/Default/2023/12/372299423/RN/QN/IT/205608847/gst-application-certification-500x500.jpeg"
             width={100}
           />
         </div>

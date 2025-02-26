@@ -153,9 +153,9 @@ export default function ContactMap() {
               transition={{ duration: 0.4, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <p className="md:mt-3 md:text-lg text-base text-[#0F1416]">
+              {/* <p className="md:mt-3 md:text-lg text-base text-[#0F1416]">
                 Don't hesitate, reach out to us now...
-              </p>
+              </p> */}
               <p
                 className={`text-primary-main lg:text-[2.5rem] md:text-3xl text-2xl font-medium md:my-3 my-1`}
               >
@@ -180,10 +180,10 @@ export default function ContactMap() {
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
                       <Link
-                        href="tel:+919993185960"
+                        href="tel:6260451165"
                         className="hover:text-secondary-main transition-transform"
                       >
-                        +91 9993185960
+                        +91 6260451165
                       </Link>
                     </p>
                   </div>
@@ -200,10 +200,10 @@ export default function ContactMap() {
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
                       <Link
-                        href="mailto:admin@truevalueventures.in"
+                        href="mailto:truevalueventures@gmail.com"
                         className="hover:text-secondary-main transition-transform"
                       >
-                        admin@truevalueventures.in
+                        truevalueventures@gmail.com
                       </Link>
                     </p>
                   </div>
@@ -337,6 +337,9 @@ export default function ContactMap() {
                       </option>
                       <option value="Indian Handicrafts">
                         Indian Handicrafts
+                      </option>
+                      <option value="Other">
+                        Other
                       </option>
                     </select>
                   </label>
