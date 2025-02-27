@@ -87,7 +87,17 @@ const products = {
     image:
       "https://www.sudesh-artncrafts.com/wp-content/uploads/2020/02/Indias-Best-Wholesalers-for-Export-of-a-Rich-Collection-of-Home-D%C3%A9cor-Handicrafts-Products.png",
   },
+  
+  "Non-GMO Soybean Meal": {
+    description: ` Non-GMO soybean meal is a high-quality product obtained through a multistage extraction process, ensuring an excellent source of protein while being completely free from cholesterol. Rich in essential amino acids, it effectively meets the biological requirements for metabolism, making it a valuable and economical protein and mineral source. This soybean meal is widely recognized for its functional and nutritional benefits, offering a high content of digestible protein along with essential fiber and minerals.`,
+    data1:
+      "Protein content: 46%-48%   Maximum fat content: 1.5%  Moisture content: Not exceeding 11%  Maximum sand/silica content: 2%  Packed in 50 kg food-grade laminated PP bags or customized packaging  Storage: Clean, dry, and infestation-free conditions on pallets  Freshness and nutritional value maintained for up to 12 months",
+    image:
+      "https://www.deesan.com/wp-content/uploads/2022/11/ISBM.jpg",
+  },
 };
+
+
 
 const ProductSelector = () => {
   const [selectedProduct, setSelectedProduct] = useState(

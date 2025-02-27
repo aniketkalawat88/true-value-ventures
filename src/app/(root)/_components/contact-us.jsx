@@ -170,6 +170,9 @@ export default function ContactUs() {
               <option value="Indian Handicrafts">
               Indian Handicrafts
               </option>
+              <option value="Non-GMO Soybean Meal">
+              Non-GMO Soybean Meal
+              </option>
               <option value="Other">
               Other
               </option>
