@@ -76,73 +76,6 @@ export default function ContactMap() {
 
   return (
     <div className="grid m grid-cols-1 md:gap-10 sm:gap-6 gap-4 my-10 max-w-7xl mx-auto xl:px-0 px-6 overflow-hidden">
-      {/* <MotionDiv
-        variants={variants}
-        initial={variants.startleft}
-        whileInView={variants.endLeft}
-        transition={{ duration: 0.4, delay: 0.4 }}
-        viewport={{ once: true }}
-        className="rounded-lg overflow-hidden"
-      >
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
-          width="100%"
-          height={"100%"}
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        />
-      </MotionDiv> */}
-      {/* <MotionDiv variants={variants} initial={variants.startleft} whileInView={variants.endLeft} transition={{ duration:0.4 , delay:0.4}}  viewport={{once:true}} className="rounded-lg overflow-hidden">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
-          width="100%"
-          height={"100%"}
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        />
-      </MotionDiv>
-      <MotionDiv variants={variants} initial={variants.start} whileInView={variants.end} transition={{ duration:0.4 , delay:0.4}}  viewport={{once:true}}  className="">
-        <p className="md:text-[2.5rem] sm:text-2xl text-xl font-bold text-primary-main mb-2">
-          Connect with us
-        </p>
-        <p className="md:text-[16px] max-md:text-[12px]">We look forward !</p>
-        <div className="flex md:gap-6 max-md:gap-4 md:mt-12 max-md:mt-6">
-          <IoCall className="text-4xl bg-primary-main text-white p-2 rounded-lg" />
-          <div>
-            <p className="md:text-2xl sm:text-xl max-md:text-lg font-semibold">
-              Phone
-            </p>
-            <p className="text-[#858587] max-md:text-[14px] md:mt-1.5 max-md:mt-1">
-              +91 98765 43210
-            </p>
-          </div>
-        </div>
-        <div className="flex md:gap-6 gap-4 md:my-10 sm:my-8 my-6">
-          <IoMail className="text-4xl bg-primary-main text-white p-2 rounded-lg" />
-          <div>
-            <p className="md:text-2xl sm:text-xl max-md:text-lg font-semibold">
-              Email
-            </p>
-            <p className="text-[#858587] max-md:text-[14px] md:mt-1.5 max-md:mt-1">
-              abc<span className="max-sm:block">@gmail.com</span>
-            </p>
-          </div>
-        </div>
-        <div className="flex md:gap-6 gap-4 md:my-10 sm:my-8 my-6">
-          <FaLocationDot className="text-4xl  bg-primary-main text-white p-2  rounded-lg max-md:w-16" />
-          <div>
-            <p className="md:text-2xl sm:text-xl max-md:text-lg font-semibold">
-              {" "}
-              Location
-            </p>
-            <p className="text-[#858587] max-md:text-[14px] md:mt-1.5 max-md:mt-1">
-              Dubai Deira, Port Saeed, Al Sayegh Building{" "}
-            </p>
-          </div>
-        </div>
-      </MotionDiv> */}
       <section>
         <div className="mx-auto max-w-7xl overflow-hidden">
           <div className="grid md:grid-cols-2 items-center">
@@ -153,9 +86,6 @@ export default function ContactMap() {
               transition={{ duration: 0.4, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              {/* <p className="md:mt-3 md:text-lg text-base text-[#0F1416]">
-                Don't hesitate, reach out to us now...
-              </p> */}
               <p
                 className={`text-primary-main lg:text-[2.5rem] md:text-3xl text-2xl font-medium md:my-3 my-1`}
               >
@@ -165,6 +95,7 @@ export default function ContactMap() {
                 className={`md:text-lg sm:text-base text-xs text-[#0F1416] md:mb-10 mb-4`}
               >
                 If you have any inquiries or would like further information,
+                <br />
                 feel free to reach us using the details below.
               </p>
               <ul className="mb-6 md:mb-0">
@@ -206,17 +137,17 @@ export default function ContactMap() {
                     </h3>
                     <p className="text-heading-main md:text-base text-xs">
                       <Link
-                        href="mailto:truevalueventures@gmail.com"
-                        className="hover:text-secondary-main transition-transform"
-                      >
-                        truevalueventures@gmail.com
-                      </Link>
-                      <br />
-                      <Link
                         href="mailto:admin@truevalueventures.in"
                         className="hover:text-secondary-main transition-transform"
                       >
                         admin@truevalueventures.in
+                      </Link>
+                      <br />
+                      <Link
+                        href="mailto:truevalueventures@gmail.com"
+                        className="hover:text-secondary-main transition-transform"
+                      >
+                        truevalueventures@gmail.com
                       </Link>
                     </p>
                   </div>
@@ -258,7 +189,7 @@ export default function ContactMap() {
                       type="text"
                       id="name"
                       placeholder="Your name"
-                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
+                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-2 md:text-base text-sm pl-2 pr-4"
                       name="Name"
                       value={isVal.Name}
                       onChange={handleChange}
@@ -272,7 +203,7 @@ export default function ContactMap() {
                       type="text"
                       id="country"
                       placeholder="Your country"
-                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
+                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-2 md:text-base text-sm pl-2 pr-4"
                       name="Country"
                       value={isVal.Country}
                       onChange={handleChange}
@@ -286,7 +217,7 @@ export default function ContactMap() {
                       type="email"
                       id="email"
                       placeholder="Your email address"
-                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
+                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-2 md:text-base text-sm pl-2 pr-4"
                       name="Email"
                       value={isVal.Email}
                       onChange={handleChange}
@@ -300,7 +231,7 @@ export default function ContactMap() {
                       type="text"
                       id="whatsappNumber"
                       placeholder="Your WhatsApp number"
-                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
+                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-2 md:text-base text-sm pl-2 pr-4"
                       name="Number"
                       value={isVal.Number}
                       onChange={handleChange}
@@ -312,7 +243,7 @@ export default function ContactMap() {
                     </p>
                     <select
                       id="product"
-                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
+                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-2 md:text-base text-sm pl-2 pr-4"
                       name="Product"
                       value={isVal.Product}
                       onChange={handleChange}
@@ -320,6 +251,9 @@ export default function ContactMap() {
                       <option value="">Select Product</option>
                       <option value="Rapeseed (Canola) Meal">
                         Rapeseed (Canola) Meal
+                      </option>
+                      <option value="Non-GMO Soybean Meal">
+                      Non-GMO Soybean Meal
                       </option>
                       <option value="Rapeseed (Canola) Oil">
                         Rapeseed (Canola) Oil
@@ -351,9 +285,6 @@ export default function ContactMap() {
                       <option value="Indian Handicrafts">
                         Indian Handicrafts
                       </option>
-                      <option value="Non-GMO Soybean Meal">
-                      Non-GMO Soybean Meal
-                      </option>
                       <option value="Other">
                         Other
                       </option>
@@ -369,7 +300,7 @@ export default function ContactMap() {
                       name="Incoterm"
                       value={isVal.Incoterm}
                       onChange={handleChange}
-                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
+                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-2 md:text-base text-sm pl-2 pr-4"
                     >
                       <option value="">Select Incoterm</option>
                       <option value="EXW">EXW</option>
@@ -408,7 +339,7 @@ export default function ContactMap() {
                       type="text"
                       id="port"
                       placeholder="Destination Port"
-                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-1 md:text-base text-sm pl-2 pr-4"
+                      className="outline-none mb-2 w-full rounded-md border border-gray-400 py-2 md:text-base text-sm pl-2 pr-4"
                       name="Port"
                       value={isVal.Port}
                       onChange={handleChange}
@@ -420,7 +351,7 @@ export default function ContactMap() {
                     </p>
                     <textarea
                       placeholder="Write your detailed requirement..."
-                      className="outline-none mb-2 w-full rounded-md border h-20 border-gray-400 py-1 md:text-base text-sm pl-2 pr-4 resize-none"
+                      className="outline-none mb-2 w-full rounded-md border h-20 border-gray-400 py-2 md:text-base text-sm pl-2 pr-4 resize-none"
                       name="Requirement"
                       value={isVal.Requirement}
                       onChange={handleChange}

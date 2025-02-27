@@ -84,7 +84,7 @@ export default function Footer() {
             alt="Trusted Seller certification"
             height={50}
             className="h-16"
-            src="https://5.imimg.com/data5/SELLER/Default/2023/12/372299423/RN/QN/IT/205608847/gst-application-certification-500x500.jpeg"
+            src="https://popcorninfotech.com/upload/msme-logo-500x500.png"
             width={100}
           />
         </div>
@@ -97,12 +97,12 @@ export default function Footer() {
             <Link href="tel:+916260451165" className="hover:text-secondary-main transition-transform">+91 6260451165</Link>
           </p>
           <p>
-            <Link href="mailto:truevalueventures@gmail.com" className="hover:text-secondary-main transition-transform">
-            truevalueventures@gmail.com
-            </Link>
-            <br />
             <Link href="mailto:admin@truevalueventures.in" className="hover:text-secondary-main transition-transform">
             admin@truevalueventures.in
+            </Link>
+            <br />
+            <Link href="mailto:truevalueventures@gmail.com" className="hover:text-secondary-main transition-transform">
+            truevalueventures@gmail.com
             </Link>
           </p>
           <div className="flex space-x-4 mt-4">

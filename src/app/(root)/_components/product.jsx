@@ -8,7 +8,14 @@ const products = {
     data1: "",
     description:
       "Rapeseed meal or canola meal, a byproduct obtained after the extraction of oil from the rapeseed plant, is widely used as animal feed due to its high protein and nutritional value. Its demand is anticipated to grow significantly amid the growing need for high-protein animal feed ingredients. Rapeseed meal is becoming an ideal replacement for other protein sources like soybean meal. This is due to its high protein content. Amid the growing world population and rising per capita meat consumption, there is an increasing need for protein-rich meals/feeds. This will likely fuel demand 					  for rapeseed meal as it promotes livestock production. Rapeseed meal is a desirable option for feed manufacturers due to its cost-effectiveness and nutritional benefits. ",
-    image: "https://b-z.by/gallery/272225-1-ts1666878815.png",
+    image: "https://yashikaagro.com/wp-content/uploads/2023/07/rapeseed-meal.jpg",
+  },
+  "Non-GMO Soybean Meal": {
+    description: ` Non-GMO soybean meal is a high-quality product obtained through a multistage extraction process, ensuring an excellent source of protein while being completely free from cholesterol. Rich in essential amino acids, it effectively meets the biological requirements for metabolism, making it a valuable and economical protein and mineral source. This soybean meal is widely recognized for its functional and nutritional benefits, offering a high content of digestible protein along with essential fiber and minerals.`,
+    data1:
+      "Protein content: 46%-48%   Maximum fat content: 1.5%  Moisture content: Not exceeding 11%  Maximum sand/silica content: 2%  Packed in 50 kg food-grade laminated PP bags or customized packaging  Storage: Clean, dry, and infestation-free conditions on pallets  Freshness and nutritional value maintained for up to 12 months",
+    image:
+      "https://www.deesan.com/wp-content/uploads/2022/11/ISBM.jpg",
   },
   "Rapeseed (Canola) Oil": {
     data1: "",
@@ -25,7 +32,6 @@ const products = {
     image:
       "https://www.dial4trade.com/uploaded_files/product_images/dehydrated-onion-org-25158203462191825.jpg",
   },
-
   "Dehydrated Onion Granules": {
     description:
       "Dehydrated onion granules are fine, coarse particles made by grinding dehydrated onions. They are smaller than flakes but coarser than onion powder.",
@@ -33,6 +39,15 @@ const products = {
       "Appearance: Creamy white to light yellow incolor, free from black spots, discoloration, or foreignmaterials.  Size: Standard granule size ranges from 0.2 mmto 1 mm (or as per buyer requirements).  Moisture Content: Below 5%–6% to ensureextended shelf life and prevent clumping.  Purity: 99.5% (free from impurities, additives,and preservatives).  Flavor and Aroma: Strong, pungent onion flavor with no off-odors or stale smell.",
     image:
       "https://4.imimg.com/data4/DG/DQ/MY-23060451/dehydratd-white-onion-granules-500x500.jpg",
+  },
+  
+  "Dehydrated Onion Flakes": {
+    description:
+      "Dehydrated onion flakes are small, flat pieces of dried onion, typically produced from mature white or red onions. These flakes are widely used in the food industry for their strong aroma and long shelf life.",
+    data1:
+      "White Onion Flakes: Popular for their mild, sweet flavor.  Red Onion Flakes: Stronger and sharper flavor, with a reddish hue.  Size: Typically 8-25 mm (standard export size). Custom sizes can be produced upon request.  Moisture Content: Below 6% to ensure a longer shelf life.  Purity: 99.5% (minimal foreign matter, no additives). Appearance: Creamy white or light reddish in color, free from black spots, discoloration, or contaminatio",
+    image:
+      "https://5.imimg.com/data5/UK/VJ/MY-13854737/dehydrated-red-onion-flakes-500x500.jpg",
   },
   "Dehydrated Onion Powder": {
     description:
@@ -68,9 +83,9 @@ const products = {
     description:
       "Biomass pellets and briquettes are eco-friendly, renewable energy sources made from compressed organic materials such as agricultural residues, wood waste, sawdust, and other biomass byproducts. They are an efficient and sustainable alternative to fossil fuels, offering cleaner combustion and lower carbon emissions.",
     data1:
-      " Pellets :- Cylindrical in shape, typically 6-16 mm in diameter and 10-30 mm in length, biomass pellets are compact, dense, and designed for use in pellet stoves, boilers, and industrial furnaces. Their small size and uniform shape make them easy to handle, transport, and store. Now a day they are widely used for electricity generation as fuel for thermal power stations.  Briquettes :- Larger and cylindrical or rectangular in shape, briquettes are generally 60-90 mm in diameter and 150-300 mm in length. They are denser than pellets and used in larger-scale applications, such as industrial heating, power generation, and as fuel in boilers or kilns. Biomass pellets and briquettes are valued for their high calorific value, low ash content, and cost-effectiveness. They promote waste-to-energy conversion and reduce dependency on fossil fuels, contributing to sustainable energy solutions.",
+      " Pellets :- Cylindrical in shape, typically 6-16 mm in diameter and 10-30 mm in length, biomass pellets are compact, dense, and designed for use in pellet stoves, boilers, and industrial furnaces. Their small size and uniform shape make them easy to handle, transport, and store. Now a day they are widely used for electricity generation as fuel for thermal power stations.  Briquettes :- Larger and cylindrical or rectangular in shape, briquettes are generally 60-90 mm in diameter and 150-300 mm in length. They are denser than pellets and used in larger-scale applications, such as industrial heating, power generation, and as fuel in boilers or kilns.  Biomass pellets and briquettes are valued for their high calorific value, low ash content, and cost-effectiveness. They promote waste-to-energy conversion and reduce dependency on fossil fuels, contributing to sustainable energy solutions.",
     image:
-      "https://5.imimg.com/data5/QW/AG/MY-12414498/biomass-briquettes-pellets.jpg",
+      "/03.png",
   },
   "Indian Organic Millets": {
     data1:
@@ -83,21 +98,11 @@ const products = {
   "Indian Handicrafts": {
     description: ` At TRUE VALUE VENTURES, we bring you the finest Indian handicrafts, crafted by skilled artisans who preserve centuries-old traditions. Each piece reflects India's rich cultural heritage, blending artistry with functionality, making it a perfect addition to global markets. .`,
     data1:
-      "Our exclusive collection features authentic, handcrafted products, meticulously designed using sustainable and We provide bulk exports, private labeling, and custom packaging solutions to suit international business needs.  Our high-quality Indian handicrafts are ethically sourced, handcrafted with precision, and delivered worldwide to ensure customer satisfaction",
+      "1. Wooden Handicrafts :Wooden sculptures, Paintings , Murals , Lipan Art ,Decorative boxes, Jewelry organizers, and engraved wall panels. 2. Metal Handicrafts : Brass idols, Metal wall art, Lamps, Utensils, andintricate filigree jewelry. 3. Textile &amp; Embroidery Handicrafts: Pashmina shawls, Banarasi Maheshwari ,Chanderi silk Sarees, Embroidered cushion covers, and handmade rugs.4. Pottery &amp; Ceramic Handicrafts: Blue Pottery from Jaipur, Terracottafigurines, and glazed Ceramics, Decorative vases, Tableware, and wallmurals.5. Marble &amp; Stone Handicrafts : Exquisite marble inlay work, Taj Mahal replicas,Stone sculptures, Tabletops, and Decorative coasters.6. Leather Handicrafts : leather goods from Rajasthan, Juttis (traditionalfootwear), leather journals, handbags, and wallets 7. Bamboo &amp; Cane Handicrafts : Bamboo baskets, furniture, lampshades,and wall décory.8. Jewelry &amp; Accessories : Semi-precious stones, Beads, Meenakari, Kundanwork , Earrings, Necklaces, Bangles, and oxidized silver jewelry.",
     image:
       "https://www.sudesh-artncrafts.com/wp-content/uploads/2020/02/Indias-Best-Wholesalers-for-Export-of-a-Rich-Collection-of-Home-D%C3%A9cor-Handicrafts-Products.png",
   },
-  
-  "Non-GMO Soybean Meal": {
-    description: ` Non-GMO soybean meal is a high-quality product obtained through a multistage extraction process, ensuring an excellent source of protein while being completely free from cholesterol. Rich in essential amino acids, it effectively meets the biological requirements for metabolism, making it a valuable and economical protein and mineral source. This soybean meal is widely recognized for its functional and nutritional benefits, offering a high content of digestible protein along with essential fiber and minerals.`,
-    data1:
-      "Protein content: 46%-48%   Maximum fat content: 1.5%  Moisture content: Not exceeding 11%  Maximum sand/silica content: 2%  Packed in 50 kg food-grade laminated PP bags or customized packaging  Storage: Clean, dry, and infestation-free conditions on pallets  Freshness and nutritional value maintained for up to 12 months",
-    image:
-      "https://www.deesan.com/wp-content/uploads/2022/11/ISBM.jpg",
-  },
 };
-
-
 
 const ProductSelector = () => {
   const [selectedProduct, setSelectedProduct] = useState(

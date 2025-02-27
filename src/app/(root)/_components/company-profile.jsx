@@ -6,7 +6,7 @@ export default function CompanyProfile() {
     {
       title: "Quality Assurance",
       description:
-        "Committed to providing the highest quality products to meet global standards.",
+        "Committed to provide the highest quality products to meet global standards.",
     },
     {
       title: "Timely Delivery",

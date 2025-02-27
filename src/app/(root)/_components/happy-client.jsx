@@ -1,38 +1,57 @@
 import React from 'react';
-import { MotionSection } from '../utils/motion-div';
 
 export default function HappyClient() {
-  const variants = {
-    start: { y: 100, opacity: 0 },
-    end: { y: 0, opacity: 1 },
-  };
+
   return (
-    <MotionSection
-      variants={variants}
-      initial={variants.start}
-      whileInView={variants.end}
-      transition={{ duration: 0.5, delay: 0.3 }}
-      viewport={{ once: true }}
-      className="bg-primary-main text-white py-12 mt-10"
-    >
-      <div className="container mx-auto grid md:grid-cols-4 grid-cols-2 gap-6">
-        <div className="text-center mb-6 md:mb-0">
-          <span className="text-4xl font-bold">15,000+</span>
-          <p>Happy Customers Worldwide</p>
-        </div>
-        <div className="text-center mb-6 md:mb-0">
-          <span className="text-4xl font-bold">70+</span>
-          <p>Countries Served</p>
-        </div>
-        <div className="text-center mb-6 md:mb-0">
-          <span className="text-4xl font-bold">500+</span>
-          <p>Successful Projects Delivered</p>
-        </div>
-        <div className="text-center">
-          <span className="text-4xl font-bold">98%</span>
-          <p>Client Retention Rate</p>
-        </div>
-      </div>
-    </MotionSection>
+    <div className="max-w-7xl mx-auto py-12 px-4 md:px-6">
+  {/* Section Title */}
+  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-main font-montserrat text-center mb-6">
+    Our Certifications
+  </h2>
+
+  {/* Certifications Grid */}
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:pt-10">
+    {/* IEC Certificate */}
+    <div className="flex flex-col items-center">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/International_Electrotechnical_Commission_Logo.svg/1200px-International_Electrotechnical_Commission_Logo.svg.png" 
+        alt="IEC Certificate"
+        className="w-20 h-20 md:w-24 md:h-24 object-contain"
+      />
+      <p className="mt-2 text-sm sm:text-base font-semibold">IEC (Import Export Code)</p>
+    </div>
+
+    {/* GST Certificate */}
+    <div className="flex flex-col items-center">
+      <img
+        src="https://5.imimg.com/data5/SELLER/Default/2023/12/372299423/RN/QN/IT/205608847/gst-application-certification-500x500.jpeg"
+        alt="GST Certificate"
+        className="w-20 h-20 md:w-24 md:h-24 object-contain"
+      />
+      <p className="mt-2 text-sm sm:text-base font-semibold">GST (Goods & Services Tax)</p>
+    </div>
+
+    {/* MSME Certificate */}
+    <div className="flex flex-col items-center">
+      <img
+        src="https://popcorninfotech.com/upload/msme-logo-500x500.png"
+        alt="MSME Certificate"
+        className="w-20 h-20 md:w-24 md:h-24 object-contain"
+      />
+      <p className="mt-2 text-sm sm:text-base font-semibold">MSME (Micro, Small & Medium Enterprises)</p>
+    </div>
+
+    {/* FSSAI Certificate */}
+    <div className="flex flex-col items-center">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/e/e2/FSSAI_logo.png"
+        alt="FSSAI Certificate"
+        className="w-20 h-20 md:w-24 md:h-24 object-contain"
+      />
+      <p className="mt-2 text-sm sm:text-base font-semibold">FSSAI (Food Safety & Standards Authority of India)</p>
+    </div>
+  </div>
+</div>
+
   );
 }

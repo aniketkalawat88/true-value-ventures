@@ -88,7 +88,7 @@ export default function ContactUs() {
         className="max-w-7xl mx-auto md:py-10 py-6 relative z-10"
       >
         <div className="text-center">
-          <h2 className="text-3xl font-bold uppercase">Enquiry Now</h2>
+          <h2 className="md:text-3xl text-2xl font-bold text-white ">Enquiry Now</h2>
           <p className="md:mt-4 mt-2">
             We always use best &amp; fastest fleets
           </p>
@@ -140,6 +140,9 @@ export default function ContactUs() {
               <option value="Rapeseed (Canola) Meal">
                 Rapeseed (Canola) Meal
               </option>
+              <option value="Non-GMO Soybean Meal">
+              Non-GMO Soybean Meal
+              </option>
               <option value="Rapeseed (Canola) Oil">
                 Rapeseed (Canola) Oil
               </option>
@@ -169,9 +172,6 @@ export default function ContactUs() {
               </option>
               <option value="Indian Handicrafts">
               Indian Handicrafts
-              </option>
-              <option value="Non-GMO Soybean Meal">
-              Non-GMO Soybean Meal
               </option>
               <option value="Other">
               Other
@@ -220,12 +220,15 @@ export default function ContactUs() {
             value={formData.Requirement}
             onChange={handleChange}
           />
-          <button
-            type="submit"
-            className="mt-4 py-2 px-6 bg-primary-main hover:bg-primary-main rounded-md text-white"
-          >
-            {loading ? "Submitting" : "Submit"}
-          </button>
+          <div className="w-full flex">
+            <button
+              type="submit"
+              className="mt-4 py-2 bg-primary-main hover:bg-primary-main rounded-md text-white mx-auto w-56"
+            >
+              {loading ? "Enquire..." : "Enquire Now"}
+            </button>
+
+          </div>
         </form>
       </MotionDiv>
     </section>

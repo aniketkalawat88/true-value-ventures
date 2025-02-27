@@ -77,8 +77,8 @@ export default function Navbar() {
             </div>
             <div className="space-x-2 flex items-center hover:text-secondary-main transition-transform border-2 rounded p-1 px-2 bg-white text-primary-main">
               <MdMail className="" />
-              <Link href="mailto:truevalueventures@gmail.com">
-                truevalueventures@gmail.com
+              <Link href="mailto:admin@truevalueventures.in">
+              admin@truevalueventures.in
               </Link>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Navbar() {
           <Link href={'/'} className="flex items-center">
             <img
               alt="Company Logo"
-              className="md:h-20 h-12 object-contain md:scale-125"
+              className="md:h-20 h-12 object-contain"
               src="/logo3.png"
             />
           </Link>

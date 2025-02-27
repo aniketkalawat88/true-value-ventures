@@ -5,7 +5,6 @@ import Testimonal from "../_components/testimonal";
 import ContactUS from "../_components/contact-us";
 import ContactMap from "./_components/contact-map";
 import { MotionDiv, MotionH2 } from "../utils/motion-div";
-import MissionVision from "./_components/mission-vision";
 
 export default function ContactUs() {
   const variants = {
@@ -17,14 +16,6 @@ export default function ContactUs() {
 
   return (
     <>
-      <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
       <HeroSection2
         name={"Contact Us"}
         img={
@@ -40,7 +31,7 @@ export default function ContactUs() {
             whileInView={variants.end}
             transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
-            className="text-3xl font-bold text-secondary-main mb-6 text-center"
+            className="md:text-3xl text-2xl font-bold text-secondary-main mb-6 md:mb-10 text-center"
           >
             Why Choose TRUE VALUE VENTURES?
           </MotionH2>
@@ -130,10 +121,6 @@ export default function ContactUs() {
           </section>
         </div>
       </section>
-      {/* <MissionVision /> */}
-
-      {/* Uncomment if ContactUS component is needed */}
-      {/* <ContactUS /> */}
       <ContactMap />
     </>
   );
