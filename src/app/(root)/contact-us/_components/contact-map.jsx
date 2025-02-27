@@ -87,7 +87,7 @@ export default function ContactMap() {
               viewport={{ once: true }}
             >
               <p
-                className={`text-primary-main lg:text-[2.5rem] md:text-3xl text-2xl font-medium md:my-3 my-1`}
+                className={`md:text-3xl text-2xl font-bold mb-6 md:mb-10 text-center text-primary-main lg:text-[2.5rem] md:my-3 my-1`}
               >
                 Get in Touch
               </p>
