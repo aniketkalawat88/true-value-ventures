@@ -67,7 +67,8 @@ export default function Navbar() {
             <div className="flex max-md:flex-col items-center md:space-x-4 space-x-1">
               <div className="flex items-center space-x-2 hover:text-secondary-main transition-transform border-2 rounded p-1 px-2 bg-white text-primary-main">
                 <IoCall />
-                <Link href="tel:+919993185960">+91 9993185960</Link>
+                <Link href="tel:+916260451165">+91 6260451165 </Link>
+                {/* <Link href="tel:+919993185960">+91 9993185960</Link> */}
               </div>
               <div className="flex items-center space-x-2">
                 {/* <MdMail className=" md:hidden"></MdMail> {" "} */}
@@ -76,8 +77,8 @@ export default function Navbar() {
             </div>
             <div className="space-x-2 flex items-center hover:text-secondary-main transition-transform border-2 rounded p-1 px-2 bg-white text-primary-main">
               <MdMail className="" />
-              <Link href="mailto:admin@truevalueventures.in">
-                admin@truevalueventures.in
+              <Link href="mailto:truevalueventures@gmail.com">
+                truevalueventures@gmail.com
               </Link>
             </div>
           </div>

@@ -92,10 +92,15 @@ export default function Footer() {
           <h4 className="font-bold mb-4">Contact Information</h4>
           <p> Flaming-8, Aakriti Eco City, Bhopal-462039 (India)</p>
           <p className="my-2">
-            Phone: <Link href="tel:+919993185960" className="hover:text-secondary-main transition-transform">+91 9993185960</Link>
+            <Link href="tel:+919993185960" className="hover:text-secondary-main transition-transform">+91 9993185960</Link>
+            {" , "}
+            <Link href="tel:+916260451165" className="hover:text-secondary-main transition-transform">+91 6260451165</Link>
           </p>
           <p>
-            Email:{" "}
+            <Link href="mailto:truevalueventures@gmail.com" className="hover:text-secondary-main transition-transform">
+            truevalueventures@gmail.com
+            </Link>
+            <br />
             <Link href="mailto:admin@truevalueventures.in" className="hover:text-secondary-main transition-transform">
             admin@truevalueventures.in
             </Link>

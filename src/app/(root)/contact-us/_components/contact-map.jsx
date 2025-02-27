@@ -178,12 +178,18 @@ export default function ContactMap() {
                     >
                       Phone
                     </h3>
-                    <p className="text-heading-main md:text-base text-xs">
+                    <p className="text-heading-main md:text-base text-xs space-x-3">
                       <Link
                         href="tel:6260451165"
                         className="hover:text-secondary-main transition-transform"
                       >
                         +91 6260451165
+                      </Link>
+                      <Link
+                        href="tel:9993185960"
+                        className="hover:text-secondary-main transition-transform"
+                      >
+                        +91 9993185960 
                       </Link>
                     </p>
                   </div>
@@ -204,6 +210,13 @@ export default function ContactMap() {
                         className="hover:text-secondary-main transition-transform"
                       >
                         truevalueventures@gmail.com
+                      </Link>
+                      <br />
+                      <Link
+                        href="mailto:admin@truevalueventures.in"
+                        className="hover:text-secondary-main transition-transform"
+                      >
+                        admin@truevalueventures.in
                       </Link>
                     </p>
                   </div>

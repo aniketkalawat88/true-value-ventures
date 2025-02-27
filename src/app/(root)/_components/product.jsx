@@ -8,7 +8,7 @@ const products = {
     data1: "",
     description:
       "Rapeseed meal or canola meal, a byproduct obtained after the extraction of oil from the rapeseed plant, is widely used as animal feed due to its high protein and nutritional value. Its demand is anticipated to grow significantly amid the growing need for high-protein animal feed ingredients. Rapeseed meal is becoming an ideal replacement for other protein sources like soybean meal. This is due to its high protein content. Amid the growing world population and rising per capita meat consumption, there is an increasing need for protein-rich meals/feeds. This will likely fuel demand 					  for rapeseed meal as it promotes livestock production. Rapeseed meal is a desirable option for feed manufacturers due to its cost-effectiveness and nutritional benefits. ",
-    image: "https://gradoil.com.ua/wp-content/uploads/2015/10/shrot_raps.jpg",
+    image: "https://b-z.by/gallery/272225-1-ts1666878815.png",
   },
   "Rapeseed (Canola) Oil": {
     data1: "",
