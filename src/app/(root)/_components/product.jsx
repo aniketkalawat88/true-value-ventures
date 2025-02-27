@@ -100,7 +100,7 @@ const products = {
     data1:
       "1. Wooden Handicrafts :Wooden sculptures, Paintings , Murals , Lipan Art ,Decorative boxes, Jewelry organizers, and engraved wall panels. 2. Metal Handicrafts : Brass idols, Metal wall art, Lamps, Utensils, andintricate filigree jewelry. 3. Textile &amp; Embroidery Handicrafts: Pashmina shawls, Banarasi Maheshwari ,Chanderi silk Sarees, Embroidered cushion covers, and handmade rugs.4. Pottery &amp; Ceramic Handicrafts: Blue Pottery from Jaipur, Terracottafigurines, and glazed Ceramics, Decorative vases, Tableware, and wallmurals.5. Marble &amp; Stone Handicrafts : Exquisite marble inlay work, Taj Mahal replicas,Stone sculptures, Tabletops, and Decorative coasters.6. Leather Handicrafts : leather goods from Rajasthan, Juttis (traditionalfootwear), leather journals, handbags, and wallets 7. Bamboo &amp; Cane Handicrafts : Bamboo baskets, furniture, lampshades,and wall décory.8. Jewelry &amp; Accessories : Semi-precious stones, Beads, Meenakari, Kundanwork , Earrings, Necklaces, Bangles, and oxidized silver jewelry.",
     image:
-      "https://www.sudesh-artncrafts.com/wp-content/uploads/2020/02/Indias-Best-Wholesalers-for-Export-of-a-Rich-Collection-of-Home-D%C3%A9cor-Handicrafts-Products.png",
+      "/handcraft.png",
   },
 };
 

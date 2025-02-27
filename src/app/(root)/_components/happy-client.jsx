@@ -5,7 +5,7 @@ export default function HappyClient() {
   return (
     <div className="max-w-7xl mx-auto py-12 px-4 md:px-6">
   {/* Section Title */}
-  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-main font-montserrat text-center mb-6">
+  <h2 className="md:text-3xl text-2xl font-bold text-primary-main font-montserrat text-center mb-6">
     Our Certifications
   </h2>
 

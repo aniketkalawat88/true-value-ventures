@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeaingComp = ({name}) => {
   return (
-    <span className='text-3xl font-semibold text-primary-main'>{name}</span>
+    <span className='md:text-3xl text-2xl font-bold text-primary-main'>{name}</span>
   )
 }
 
