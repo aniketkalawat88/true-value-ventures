@@ -3,7 +3,7 @@ import React from 'react';
 export default function HappyClient() {
 
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4 md:px-6">
+    <div className="max-w-7xl mx-auto pb-10 px-4 md:px-6">
   {/* Section Title */}
   <h2 className="md:text-3xl text-2xl font-bold text-primary-main font-montserrat text-center mb-6">
     Our Certifications

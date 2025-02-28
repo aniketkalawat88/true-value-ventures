@@ -109,13 +109,14 @@ export default function ContactMap() {
                     >
                       Phone
                     </h3>
-                    <p className="text-heading-main md:text-base text-xs space-x-3">
+                    <p className="text-heading-main md:text-base text-xs space-x-2">
                       <Link
                         href="tel:6260451165"
                         className="hover:text-secondary-main transition-transform"
                       >
                         +91 6260451165
                       </Link>
+                      {" ,"}
                       <Link
                         href="tel:9993185960"
                         className="hover:text-secondary-main transition-transform"

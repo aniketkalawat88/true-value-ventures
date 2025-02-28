@@ -85,11 +85,11 @@ export default function ContactUs() {
         whileInView={variants.endUp}
         viewport={{ once: true }}
         transition={{ duration: 0.7, delay: 0.3, type: "spring" }}
-        className="max-w-7xl mx-auto md:py-10 py-6 relative z-10"
+        className="max-w-7xl mx-auto md:py-6 py-6 relative z-10"
       >
         <div className="text-center">
           <h2 className="md:text-3xl text-2xl font-bold text-white ">Enquiry Now</h2>
-          <p className="md:mt-4 mt-2">
+          <p className="md:mt-2 mt-2">
             We always use best &amp; fastest fleets
           </p>
         </div>
