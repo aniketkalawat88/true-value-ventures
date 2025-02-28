@@ -24,13 +24,13 @@ const products = {
     image:
       "https://www.laurawyness.com/wp-content/uploads/2024/06/rapeseed-oil.png",
   },
-  "Dehydrated Garlic Flakes": {
+  "Dehydrated Onion Flakes": {
     description:
-      "Dried garlic slices are white to pale yellow in color, cut into standard-sized slices of 8-15 mm. They have a moisture content of ≤6% and an impressive purity of ≥99.5%, ensuring high quality. With their strong, pungent, and natural garlic aroma, these slices are dry and crispy in texture, making them perfect for a wide range of culinary uses. In the food industry, dried garlic slices are commonly used in soups, sauces, pickles, and seasonings.",
-    data1: 
-      "Ideal for spice blends, dry rubs, and pre-mixed food preparations.  When rehydrated, they work excellently in cooking and food processing applications.  For packaging, the slices are carefully stored in food-grade polyethylene bags placed inside corrugated cartons or jute bags.  Standard packaging sizes range from 10 kg to 20-25 kg, with the option of vacuum-sealed bags for extended shelf life.  To maintain their quality, dried garlic slices should be stored in a cool, dry place away from direct sunlight and moisture.  When stored properly, they have a shelf life of 12 to 24 months.",
+      "Dehydrated onion flakes are small, flat pieces of dried onion, typically produced from mature white or red onions. These flakes are widely used in the food industry for their strong aroma and long shelf life.",
+    data1:
+      "White Onion Flakes: Popular for their mild, sweet flavor.  Red Onion Flakes: Stronger and sharper flavor, with a reddish hue.  Size: Typically 8-25 mm (standard export size). Custom sizes can be produced upon request.  Moisture Content: Below 6% to ensure a longer shelf life.  Purity: 99.5% (minimal foreign matter, no additives). Appearance: Creamy white or light reddish in color, free from black spots, discoloration, or contaminatio",
     image:
-      "https://www.dial4trade.com/uploaded_files/product_images/dehydrated-onion-org-25158203462191825.jpg",
+      "https://5.imimg.com/data5/UK/VJ/MY-13854737/dehydrated-red-onion-flakes-500x500.jpg",
   },
   "Dehydrated Onion Granules": {
     description:
@@ -40,15 +40,6 @@ const products = {
     image:
       "https://4.imimg.com/data4/DG/DQ/MY-23060451/dehydratd-white-onion-granules-500x500.jpg",
   },
-  
-  "Dehydrated Onion Flakes": {
-    description:
-      "Dehydrated onion flakes are small, flat pieces of dried onion, typically produced from mature white or red onions. These flakes are widely used in the food industry for their strong aroma and long shelf life.",
-    data1:
-      "White Onion Flakes: Popular for their mild, sweet flavor.  Red Onion Flakes: Stronger and sharper flavor, with a reddish hue.  Size: Typically 8-25 mm (standard export size). Custom sizes can be produced upon request.  Moisture Content: Below 6% to ensure a longer shelf life.  Purity: 99.5% (minimal foreign matter, no additives). Appearance: Creamy white or light reddish in color, free from black spots, discoloration, or contaminatio",
-    image:
-      "https://5.imimg.com/data5/UK/VJ/MY-13854737/dehydrated-red-onion-flakes-500x500.jpg",
-  },
   "Dehydrated Onion Powder": {
     description:
       "Finely ground powder made from dehydrated onions, offering a concentrated onion flavor.",
@@ -56,6 +47,14 @@ const products = {
       "Appearance: Light creamy white to pale yellow in color, smooth texture, and free from lumps or foreign matter.  Flavor: Strong, pungent onion taste, free from off- odors.  Moisture Content: Below 5% to ensure extended shelf life.  Culinary Use: Used in soups, sauces, marinades, dips, and dry rubs.  Food Industry: Essential in spice blends, snack seasonings, ready-to-eat meals, and fast food chains.  Commercial Use: Popular in processed foods like chips, instant noodles, and frozen meals.",
     image:
       "https://img2.exportersindia.com/product_images/bc-small/2021/5/8846794/dehydrated-onion-powder-1621405496-5827253.jpeg",
+  },
+  "Dehydrated Garlic Flakes": {
+    description:
+      "Dried garlic slices are white to pale yellow in color, cut into standard-sized slices of 8-15 mm. They have a moisture content of ≤6% and an impressive purity of ≥99.5%, ensuring high quality. With their strong, pungent, and natural garlic aroma, these slices are dry and crispy in texture, making them perfect for a wide range of culinary uses. In the food industry, dried garlic slices are commonly used in soups, sauces, pickles, and seasonings.",
+    data1: 
+      "Ideal for spice blends, dry rubs, and pre-mixed food preparations.  When rehydrated, they work excellently in cooking and food processing applications.  For packaging, the slices are carefully stored in food-grade polyethylene bags placed inside corrugated cartons or jute bags.  Standard packaging sizes range from 10 kg to 20-25 kg, with the option of vacuum-sealed bags for extended shelf life.  To maintain their quality, dried garlic slices should be stored in a cool, dry place away from direct sunlight and moisture.  When stored properly, they have a shelf life of 12 to 24 months.",
+    image:
+      "https://www.dial4trade.com/uploaded_files/product_images/dehydrated-onion-org-25158203462191825.jpg",
   },
   "Dehydrated Garlic Flakes": {
     data1:

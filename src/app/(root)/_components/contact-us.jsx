@@ -187,9 +187,9 @@ export default function ContactUs() {
               <option value="">Select Incoterm</option>
               <option value="EXW">EXW</option>
               <option value="FCA">FCA</option>
-              <option value="FAS">FAS)</option>
-              <option value="FOB">FOB)</option>
-              <option value="CFR">CFR)</option>
+              <option value="FAS">FAS</option>
+              <option value="FOB">FOB</option>
+              <option value="CFR">CFR</option>
               <option value="CIF">
                 CIF
               </option>
